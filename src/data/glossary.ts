@@ -1,0 +1,416 @@
+export interface GlossaryTerm {
+  term: string;
+  aliases: string[];
+  definition: string;
+  example?: string;
+  emoji: string;
+}
+
+export const glossaryTerms: GlossaryTerm[] = [
+  {
+    term: 'variável',
+    aliases: ['variáveis', 'variable', 'var'],
+    definition: 'Um espaço nomeado na memória que armazena um valor que pode mudar durante a execução do programa.',
+    example: 'let nome = "Maria";\nlet idade = 25;',
+    emoji: '📦',
+  },
+  {
+    term: 'função',
+    aliases: ['funções', 'function', 'func', 'def'],
+    definition: 'Um bloco de código reutilizável que realiza uma tarefa específica e pode receber parâmetros e retornar valores.',
+    example: 'function somar(a, b) {\n  return a + b;\n}',
+    emoji: '🔧',
+  },
+  {
+    term: 'loop',
+    aliases: ['loops', 'laço', 'laços', 'repetição', 'iteração'],
+    definition: 'Uma estrutura que repete um bloco de código enquanto uma condição for verdadeira ou para cada item de uma coleção.',
+    example: 'for (let i = 0; i < 5; i++) {\n  console.log(i);\n}',
+    emoji: '🔄',
+  },
+  {
+    term: 'condição',
+    aliases: ['condições', 'condicional', 'if', 'condicionais'],
+    definition: 'Uma estrutura que executa diferentes blocos de código dependendo se uma expressão é verdadeira ou falsa.',
+    example: 'if (idade >= 18) {\n  console.log("maior de idade");\n}',
+    emoji: '🔀',
+  },
+  {
+    term: 'algoritmo',
+    aliases: ['algoritmos'],
+    definition: 'Uma sequência finita de instruções bem definidas que resolvem um problema ou realizam uma computação.',
+    emoji: '📋',
+  },
+  {
+    term: 'array',
+    aliases: ['arrays', 'lista', 'listas', 'vetor', 'vetores'],
+    definition: 'Uma estrutura de dados que armazena múltiplos valores em uma única variável, acessíveis por índice numérico.',
+    example: 'const frutas = ["maçã", "banana", "laranja"];\nconsole.log(frutas[0]); // "maçã"',
+    emoji: '📚',
+  },
+  {
+    term: 'string',
+    aliases: ['strings', 'texto', 'cadeia de caracteres'],
+    definition: 'Um tipo de dado que representa uma sequência de caracteres de texto, geralmente delimitada por aspas.',
+    example: 'const mensagem = "Olá, mundo!";\nconst nome = \'Ana\';',
+    emoji: '💬',
+  },
+  {
+    term: 'inteiro',
+    aliases: ['inteiros', 'integer', 'int'],
+    definition: 'Um tipo de dado numérico que representa números sem casas decimais, podendo ser positivo, negativo ou zero.',
+    example: 'let quantidade = 42;\nlet temperatura = -5;',
+    emoji: '🔢',
+  },
+  {
+    term: 'float',
+    aliases: ['floats', 'ponto flutuante', 'decimal', 'double'],
+    definition: 'Um tipo de dado numérico que representa números com casas decimais, como valores monetários ou medidas.',
+    example: 'let preco = 19.99;\nlet altura = 1.75;',
+    emoji: '🔣',
+  },
+  {
+    term: 'boolean',
+    aliases: ['booleans', 'booleano', 'booleanos', 'bool'],
+    definition: 'Um tipo de dado que possui apenas dois valores possíveis: verdadeiro (true) ou falso (false).',
+    example: 'let ativo = true;\nlet bloqueado = false;',
+    emoji: '✅',
+  },
+  {
+    term: 'objeto',
+    aliases: ['objetos', 'object', 'objects'],
+    definition: 'Uma coleção de propriedades (pares chave-valor) que representa uma entidade com atributos e comportamentos.',
+    example: 'const pessoa = {\n  nome: "João",\n  idade: 30\n};',
+    emoji: '📦',
+  },
+  {
+    term: 'classe',
+    aliases: ['classes', 'class'],
+    definition: 'Um molde para criar objetos, definindo suas propriedades e métodos em um único lugar de forma organizada.',
+    example: 'class Carro {\n  constructor(marca) {\n    this.marca = marca;\n  }\n}',
+    emoji: '🏭',
+  },
+  {
+    term: 'método',
+    aliases: ['métodos', 'method', 'methods'],
+    definition: 'Uma função que pertence a um objeto ou classe, definindo o comportamento que aquele objeto pode executar.',
+    example: 'class Cachorro {\n  latir() {\n    console.log("Au au!");\n  }\n}',
+    emoji: '⚙️',
+  },
+  {
+    term: 'parâmetro',
+    aliases: ['parâmetros', 'parameter', 'parameters', 'argumento', 'argumentos'],
+    definition: 'Um valor passado para uma função quando ela é chamada, permitindo que a função opere com dados variáveis.',
+    example: 'function cumprimentar(nome) {\n  return "Olá, " + nome;\n}\ncumprimentar("Ana");',
+    emoji: '📥',
+  },
+  {
+    term: 'retorno',
+    aliases: ['return', 'retornar', 'valor de retorno'],
+    definition: 'O valor que uma função devolve após sua execução, podendo ser usado em outros lugares do código.',
+    example: 'function dobrar(n) {\n  return n * 2;\n}\nconst resultado = dobrar(5); // 10',
+    emoji: '📤',
+  },
+  {
+    term: 'recursão',
+    aliases: ['recursividade', 'recursive', 'recursão'],
+    definition: 'Uma técnica onde uma função chama a si mesma para resolver um problema, dividindo-o em casos menores.',
+    example: 'function fatorial(n) {\n  if (n <= 1) return 1;\n  return n * fatorial(n - 1);\n}',
+    emoji: '🌀',
+  },
+  {
+    term: 'compilador',
+    aliases: ['compiladores', 'compiler'],
+    definition: 'Um programa que traduz código-fonte de uma linguagem de alto nível para código de máquina ou bytecode antes da execução.',
+    emoji: '🔨',
+  },
+  {
+    term: 'interpretador',
+    aliases: ['interpretadores', 'interpreter'],
+    definition: 'Um programa que lê e executa código-fonte diretamente, linha por linha, sem criar um arquivo de saída separado.',
+    emoji: '▶️',
+  },
+  {
+    term: 'banco de dados',
+    aliases: ['banco', 'database', 'db', 'bd'],
+    definition: 'Um sistema organizado para armazenar, acessar e gerenciar grandes volumes de dados de forma estruturada.',
+    emoji: '🗄️',
+  },
+  {
+    term: 'API',
+    aliases: ['apis', 'interface de programação'],
+    definition: 'Interface de Programação de Aplicações — um conjunto de regras que permite que diferentes sistemas se comuniquem entre si.',
+    emoji: '🔌',
+  },
+  {
+    term: 'HTML',
+    aliases: ['html5', 'hypertext markup language'],
+    definition: 'Linguagem de marcação usada para estruturar o conteúdo de páginas web, definindo elementos como títulos, parágrafos e links.',
+    example: '<h1>Título</h1>\n<p>Parágrafo de texto.</p>',
+    emoji: '🌐',
+  },
+  {
+    term: 'CSS',
+    aliases: ['css3', 'estilos', 'cascading style sheets'],
+    definition: 'Linguagem de estilo que controla a aparência visual dos elementos HTML, como cores, fontes, espaçamentos e layouts.',
+    example: 'body {\n  background: #fff;\n  font-family: sans-serif;\n}',
+    emoji: '🎨',
+  },
+  {
+    term: 'JavaScript',
+    aliases: ['js', 'javascript', 'ecmascript'],
+    definition: 'Linguagem de programação que torna páginas web interativas, sendo a única linguagem nativa dos navegadores.',
+    example: 'document.getElementById("btn")\n  .addEventListener("click", () => {\n    alert("Clicado!");\n  });',
+    emoji: '⚡',
+  },
+  {
+    term: 'Python',
+    aliases: ['python3', 'py'],
+    definition: 'Linguagem de programação de alto nível conhecida pela sua sintaxe clara e legível, muito usada em ciência de dados e automação.',
+    example: 'for i in range(5):\n    print(f"Número {i}")',
+    emoji: '🐍',
+  },
+  {
+    term: 'Git',
+    aliases: ['git'],
+    definition: 'Sistema de controle de versão distribuído que rastreia mudanças no código ao longo do tempo, permitindo colaboração em equipe.',
+    emoji: '🌿',
+  },
+  {
+    term: 'commit',
+    aliases: ['commits', 'commitar'],
+    definition: 'Um registro de mudanças salvas no repositório Git, contendo uma mensagem descritiva e um identificador único.',
+    example: 'git add .\ngit commit -m "Adiciona funcionalidade X"',
+    emoji: '💾',
+  },
+  {
+    term: 'branch',
+    aliases: ['branches', 'ramo', 'ramificação'],
+    definition: 'Uma linha independente de desenvolvimento no Git que permite trabalhar em novas funcionalidades sem afetar o código principal.',
+    example: 'git checkout -b nova-feature\n# desenvolve...\ngit merge nova-feature',
+    emoji: '🌱',
+  },
+  {
+    term: 'debug',
+    aliases: ['debugging', 'depuração', 'depurar'],
+    definition: 'O processo de encontrar, analisar e corrigir erros (bugs) em um programa de computador.',
+    emoji: '🐛',
+  },
+  {
+    term: 'framework',
+    aliases: ['frameworks'],
+    definition: 'Uma estrutura de suporte predefinida que fornece ferramentas, bibliotecas e convenções para acelerar o desenvolvimento de software.',
+    emoji: '🏗️',
+  },
+  {
+    term: 'biblioteca',
+    aliases: ['biblioteca', 'bibliotecas', 'library', 'lib'],
+    definition: 'Um conjunto de funções e código pré-escritos que podem ser reutilizados em diferentes programas para resolver problemas comuns.',
+    emoji: '📖',
+  },
+  {
+    term: 'herança',
+    aliases: ['herança', 'heranca', 'inheritance'],
+    definition: 'Um princípio da orientação a objetos onde uma classe filha herda propriedades e métodos de uma classe pai.',
+    example: 'class Animal {\n  falar() { ... }\n}\nclass Cão extends Animal { }',
+    emoji: '👨‍👩‍👦',
+  },
+  {
+    term: 'interface',
+    aliases: ['interfaces'],
+    definition: 'Um contrato que define quais métodos e propriedades uma classe deve implementar, sem fornecer a implementação.',
+    emoji: '📝',
+  },
+  {
+    term: 'encapsulamento',
+    aliases: ['encapsular'],
+    definition: 'Um princípio da OOP que esconde os detalhes internos de um objeto, expondo apenas o necessário através de uma interface pública.',
+    emoji: '🔒',
+  },
+  {
+    term: 'polimorfismo',
+    aliases: ['polimórfico'],
+    definition: 'A capacidade de objetos de diferentes classes responderem ao mesmo método de formas diferentes e específicas.',
+    emoji: '🦎',
+  },
+  {
+    term: 'banco relacional',
+    aliases: ['sql database', 'relational database', 'sgbd'],
+    definition: 'Um banco de dados que organiza dados em tabelas com linhas e colunas relacionadas entre si por chaves.',
+    emoji: '🗃️',
+  },
+  {
+    term: 'REST',
+    aliases: ['restful', 'api rest'],
+    definition: 'Estilo arquitetural para APIs web que usa verbos HTTP (GET, POST, PUT, DELETE) para operações em recursos.',
+    emoji: '🌐',
+  },
+  {
+    term: 'JSON',
+    aliases: ['json'],
+    definition: 'Formato leve de troca de dados baseado em texto, fácil de ler por humanos e fácil de processar por máquinas.',
+    example: '{\n  "nome": "Ana",\n  "idade": 28,\n  "ativo": true\n}',
+    emoji: '📄',
+  },
+  {
+    term: 'assíncrono',
+    aliases: ['async', 'assíncrona', 'assincronismo', 'assincrono'],
+    definition: 'Operações que não bloqueiam a execução do código enquanto aguardam um resultado, como requisições de rede.',
+    example: 'async function buscarDados() {\n  const res = await fetch("/api/dados");\n  return res.json();\n}',
+    emoji: '⏳',
+  },
+  {
+    term: 'promise',
+    aliases: ['promises', 'promessa'],
+    definition: 'Um objeto que representa o resultado eventual (sucesso ou falha) de uma operação assíncrona em JavaScript.',
+    example: 'fetch("/api")\n  .then(res => res.json())\n  .catch(err => console.error(err));',
+    emoji: '🤝',
+  },
+  {
+    term: 'callback',
+    aliases: ['callbacks'],
+    definition: 'Uma função passada como argumento para outra função, para ser executada após a conclusão de uma operação.',
+    example: 'setTimeout(() => {\n  console.log("Executado após 1s");\n}, 1000);',
+    emoji: '📞',
+  },
+  {
+    term: 'componente',
+    aliases: ['componentes', 'component', 'components'],
+    definition: 'Uma unidade reutilizável e independente de interface do usuário, especialmente em frameworks como React e Vue.',
+    emoji: '🧩',
+  },
+  {
+    term: 'estado',
+    aliases: ['state', 'estado da aplicação'],
+    definition: 'Dados que representam a situação atual de uma aplicação ou componente e que podem mudar ao longo do tempo.',
+    emoji: '💾',
+  },
+  {
+    term: 'imutabilidade',
+    aliases: ['imutável', 'immutable', 'imutáveis'],
+    definition: 'A propriedade de dados que não podem ser modificados após criação; para alterar, cria-se um novo valor.',
+    emoji: '🔐',
+  },
+  {
+    term: 'tipagem',
+    aliases: ['tipagem estática', 'tipagem dinâmica', 'types', 'tipos'],
+    definition: 'O sistema que define e verifica os tipos de dados de variáveis e funções, podendo ser estático (em tempo de compilação) ou dinâmico (em execução).',
+    emoji: '🏷️',
+  },
+  {
+    term: 'deploy',
+    aliases: ['deployment', 'publicar', 'subir', 'deployar'],
+    definition: 'O processo de disponibilizar uma aplicação em um ambiente de produção para que usuários possam acessá-la.',
+    emoji: '🚀',
+  },
+  {
+    term: 'container',
+    aliases: ['containers', 'docker'],
+    definition: 'Uma unidade de software que empacota código e todas as suas dependências para que a aplicação rode de forma consistente em qualquer ambiente.',
+    emoji: '📦',
+  },
+  {
+    term: 'hash',
+    aliases: ['hashing', 'hash function'],
+    definition: 'Uma função que transforma dados de qualquer tamanho em um valor de tamanho fixo, usada em segurança e estruturas de dados.',
+    emoji: '#️⃣',
+  },
+  {
+    term: 'exception',
+    aliases: ['exceção', 'exceções', 'erro', 'exceptions', 'try catch'],
+    definition: 'Um evento anormal que ocorre durante a execução do programa e que pode ser capturado e tratado para evitar crashes.',
+    example: 'try {\n  const data = JSON.parse(input);\n} catch (e) {\n  console.error("Erro:", e);\n}',
+    emoji: '⚠️',
+  },
+  {
+    term: 'escopo',
+    aliases: ['scope', 'escopos'],
+    definition: 'A região do código onde uma variável ou função está disponível e pode ser acessada.',
+    emoji: '🔭',
+  },
+  {
+    term: 'closure',
+    aliases: ['closures'],
+    definition: 'Uma função que captura e mantém acesso às variáveis do escopo onde foi criada, mesmo após aquele escopo ser encerrado.',
+    example: 'function contador() {\n  let n = 0;\n  return () => ++n;\n}\nconst c = contador();\nc(); // 1',
+    emoji: '🧲',
+  },
+  {
+    term: 'refatoração',
+    aliases: ['refactor', 'refatorar', 'refactoring'],
+    definition: 'O processo de reestruturar código existente sem alterar seu comportamento externo, melhorando legibilidade e manutenibilidade.',
+    emoji: '✨',
+  },
+  {
+    term: 'pull request',
+    aliases: ['pr', 'merge request', 'code review'],
+    definition: 'Uma solicitação para integrar alterações de uma branch em outra, geralmente acompanhada de revisão de código pela equipe.',
+    emoji: '🔁',
+  },
+  {
+    term: 'middleware',
+    aliases: ['middlewares'],
+    definition: 'Software que fica entre duas partes de um sistema, interceptando requisições e respostas para adicionar funcionalidades.',
+    emoji: '🔗',
+  },
+  {
+    term: 'cache',
+    aliases: ['caching', 'cached'],
+    definition: 'Armazenamento temporário de dados para acesso mais rápido, evitando operações repetidas e lentas como consultas ao banco.',
+    emoji: '⚡',
+  },
+  {
+    term: 'autenticação',
+    aliases: ['auth', 'authentication', 'login'],
+    definition: 'O processo de verificar a identidade de um usuário, geralmente através de credenciais como senha ou token.',
+    emoji: '🔑',
+  },
+  {
+    term: 'autorização',
+    aliases: ['authorization', 'permissões'],
+    definition: 'O processo de verificar se um usuário autenticado tem permissão para acessar um recurso ou realizar uma ação específica.',
+    emoji: '🛡️',
+  },
+  {
+    term: 'token',
+    aliases: ['tokens', 'jwt', 'access token'],
+    definition: 'Uma string codificada que representa a identidade e permissões de um usuário, usada para autenticação em APIs.',
+    emoji: '🎫',
+  },
+  {
+    term: 'webpack',
+    aliases: ['bundler', 'bundling', 'bundle'],
+    definition: 'Uma ferramenta que empacota módulos JavaScript e outros assets em arquivos otimizados para produção.',
+    emoji: '📦',
+  },
+  {
+    term: 'responsividade',
+    aliases: ['responsivo', 'responsive', 'mobile-first'],
+    definition: 'A capacidade de uma interface se adaptar e funcionar bem em diferentes tamanhos de tela, de celulares a monitores grandes.',
+    emoji: '📱',
+  },
+  {
+    term: 'webpack',
+    aliases: ['bundler'],
+    definition: 'Ferramenta de empacotamento que une múltiplos arquivos JavaScript em um ou poucos arquivos otimizados para o navegador.',
+    emoji: '🎁',
+  },
+  {
+    term: 'regex',
+    aliases: ['expressão regular', 'expressões regulares', 'regexp', 'regular expression'],
+    definition: 'Uma sequência de caracteres que define um padrão de busca, usada para encontrar e manipular texto de forma avançada.',
+    example: 'const emailRegex = /^[\\w.-]+@[\\w.-]+\\.\\w+$/;\nemailRegex.test("ana@email.com"); // true',
+    emoji: '🔍',
+  },
+];
+
+export function searchGlossary(query: string): GlossaryTerm[] {
+  const q = query.toLowerCase().trim();
+  if (!q) return glossaryTerms;
+  return glossaryTerms.filter(
+    (t) =>
+      t.term.toLowerCase().includes(q) ||
+      t.aliases.some((a) => a.toLowerCase().includes(q)) ||
+      t.definition.toLowerCase().includes(q)
+  );
+}
