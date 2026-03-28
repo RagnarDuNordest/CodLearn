@@ -211,6 +211,16 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             <span>Projetos Reais</span>
           </Link>
           <Link
+            href="/construindo"
+            onClick={onClose}
+            className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-accent ${
+              pathname === '/construindo' ? 'bg-accent/60 text-foreground' : 'text-muted-foreground'
+            }`}
+          >
+            <Hammer className="h-4 w-4" />
+            <span>Construindo Projetos</span>
+          </Link>
+          <Link
             href="/recursos"
             onClick={onClose}
             className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors hover:bg-accent ${

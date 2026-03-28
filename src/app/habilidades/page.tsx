@@ -12,6 +12,9 @@ import { getTotalStudyMinutes } from '@/hooks/useLessonTimer';
 
 // ─── Module emoji map ────────────────────────────────────────────────────────
 const MODULE_EMOJI: Record<string, string> = {
+  'estrutura-pensamento': '🧩',
+  'resolucao-problemas': '🎯',
+  'arquitetura-software': '🏛️',
   intro: '💡',
   logica: '🧠',
   linux: '🐧',
@@ -101,44 +104,109 @@ const careerPaths = [
     color: 'from-amber-500/20 to-yellow-500/10',
     border: 'border-amber-500/30',
   },
+  {
+    title: 'Desenvolvedor Mobile',
+    emoji: '📱',
+    requiredModules: ['intro', 'html-css', 'frontend', 'git'],
+    description: 'Cria aplicativos para Android e iOS com React Native',
+    salary: 'R$ 5.000 – R$ 14.000/mês',
+    color: 'from-sky-500/20 to-blue-500/10',
+    border: 'border-sky-500/30',
+  },
+  {
+    title: 'Engenheiro de IA / ML',
+    emoji: '🤖',
+    requiredModules: ['python', 'sql', 'algoritmos', 'estruturas'],
+    description: 'Cria modelos de inteligência artificial e deep learning',
+    salary: 'R$ 8.000 – R$ 25.000/mês',
+    color: 'from-violet-500/20 to-purple-500/10',
+    border: 'border-violet-500/30',
+  },
+  {
+    title: 'Cloud Engineer',
+    emoji: '☁️',
+    requiredModules: ['linux', 'git', 'backend', 'sql'],
+    description: 'Gerencia infraestrutura em nuvem (AWS, GCP, Azure)',
+    salary: 'R$ 8.000 – R$ 22.000/mês',
+    color: 'from-blue-500/20 to-cyan-500/10',
+    border: 'border-blue-500/30',
+  },
+  {
+    title: 'QA Engineer',
+    emoji: '🧪',
+    requiredModules: ['intro', 'logica', 'python', 'git'],
+    description: 'Garante qualidade de software com testes automatizados',
+    salary: 'R$ 4.000 – R$ 12.000/mês',
+    color: 'from-lime-500/20 to-green-500/10',
+    border: 'border-lime-500/30',
+  },
+  {
+    title: 'Desenvolvedor de Games',
+    emoji: '🎮',
+    requiredModules: ['intro', 'logica', 'c', 'algoritmos', 'estruturas'],
+    description: 'Cria jogos digitais usando C++, Unity ou Unreal Engine',
+    salary: 'R$ 4.000 – R$ 14.000/mês',
+    color: 'from-fuchsia-500/20 to-pink-500/10',
+    border: 'border-fuchsia-500/30',
+  },
+  {
+    title: 'Arquiteto de Software',
+    emoji: '🏛️',
+    requiredModules: ['intro', 'algoritmos', 'estruturas', 'backend', 'sql', 'git', 'linux'],
+    description: 'Define a estrutura e padrões técnicos de grandes sistemas',
+    salary: 'R$ 12.000 – R$ 30.000/mês',
+    color: 'from-slate-500/20 to-gray-500/10',
+    border: 'border-slate-500/30',
+  },
 ];
 
 // ─── Skill tree layout ───────────────────────────────────────────────────────
-// Each node: { id, x, y } — coordinates in a virtual 1000×600 grid
 const TREE_NODES = [
-  { id: 'intro',      x: 60,  y: 60  },
-  { id: 'logica',     x: 260, y: 60  },
-  { id: 'python',     x: 460, y: 60  },
-  { id: 'algoritmos', x: 660, y: 60  },
-  { id: 'estruturas', x: 860, y: 60  },
-  { id: 'html-css',   x: 260, y: 240 },
-  { id: 'frontend',   x: 460, y: 240 },
-  { id: 'backend',    x: 660, y: 240 },
-  { id: 'c',          x: 60,  y: 420 },
-  { id: 'java',       x: 260, y: 420 },
-  { id: 'sql',        x: 460, y: 420 },
-  { id: 'git',        x: 660, y: 420 },
-  { id: 'linux',      x: 860, y: 420 },
+  { id: 'estrutura-pensamento', x: 160, y: 60  },
+  { id: 'resolucao-problemas',  x: 460, y: 60  },
+  { id: 'intro',                x: 760, y: 60  },
+  { id: 'logica',               x: 60,  y: 240 },
+  { id: 'python',               x: 260, y: 240 },
+  { id: 'algoritmos',           x: 460, y: 240 },
+  { id: 'estruturas',           x: 660, y: 240 },
+  { id: 'html-css',             x: 860, y: 240 },
+  { id: 'c',                    x: 60,  y: 420 },
+  { id: 'java',                 x: 260, y: 420 },
+  { id: 'sql',                  x: 460, y: 420 },
+  { id: 'frontend',             x: 660, y: 420 },
+  { id: 'backend',              x: 860, y: 420 },
+  { id: 'git',                  x: 160, y: 600 },
+  { id: 'linux',                x: 460, y: 600 },
+  { id: 'arquitetura-software', x: 760, y: 600 },
 ];
 
 // Edges: [from, to]
 const TREE_EDGES: [string, string][] = [
-  ['intro', 'logica'],
+  ['estrutura-pensamento', 'resolucao-problemas'],
+  ['resolucao-problemas', 'intro'],
+  ['estrutura-pensamento', 'logica'],
+  ['resolucao-problemas', 'algoritmos'],
+  ['intro', 'python'],
   ['logica', 'python'],
   ['python', 'algoritmos'],
   ['algoritmos', 'estruturas'],
-  ['logica', 'html-css'],
-  ['html-css', 'frontend'],
-  ['algoritmos', 'backend'],
-  ['frontend', 'backend'],
+  ['estruturas', 'html-css'],
+  ['logica', 'c'],
   ['c', 'java'],
-  ['git', 'linux'],
+  ['algoritmos', 'sql'],
+  ['html-css', 'frontend'],
+  ['sql', 'backend'],
+  ['frontend', 'backend'],
+  ['java', 'git'],
+  ['backend', 'linux'],
+  ['estruturas', 'arquitetura-software'],
+  ['algoritmos', 'arquitetura-software'],
 ];
 
 const NODE_W = 140;
 const NODE_H = 100;
 const VIEWBOX_W = 1000;
-const VIEWBOX_H = 540;
+const VIEWBOX_H = 720;
 
 // ─── Circular progress ring ──────────────────────────────────────────────────
 function CircleRing({ pct, color }: { pct: number; color: string }) {

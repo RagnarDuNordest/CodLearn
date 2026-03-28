@@ -1,5 +1,37 @@
 import { Lesson } from '@/types/lesson';
 
+// Estrutura de Pensamento
+import { lesson as comoPensarComoDev } from './estrutura-pensamento/como-pensar-como-dev';
+import { lesson as decomposicaoNaPratica } from './estrutura-pensamento/decomposicao-na-pratica';
+import { lesson as abstracaoEModelosMentais } from './estrutura-pensamento/abstracao-e-modelos-mentais';
+import { lesson as diagramasEFluxogramas } from './estrutura-pensamento/diagramas-e-fluxogramas';
+import { lesson as documentandoOPensamento } from './estrutura-pensamento/documentando-o-pensamento';
+import { lesson as projetoEstruturaPensamento } from './estrutura-pensamento/projeto-estrutura-pensamento';
+
+// Leitura de Codigo
+import { lesson as comoAbordarCodigoDesconhecido } from './leitura-codigo/como-abordar-codigo-desconhecido';
+import { lesson as rastreandoFluxoDeExecucao } from './leitura-codigo/rastreando-fluxo-de-execucao';
+import { lesson as reconhecendoPadroesComuns } from './leitura-codigo/reconhecendo-padroes-comuns';
+import { lesson as lendoCodigoDeProducao } from './leitura-codigo/lendo-codigo-de-producao';
+import { lesson as refatorandoCodigoAlheio } from './leitura-codigo/refatorando-codigo-alheio';
+import { lesson as projetoLeituraCodigo } from './leitura-codigo/projeto-leitura-codigo';
+
+// Resolucao de Problemas
+import { lesson as entendendoOProblema } from './resolucao-problemas/entendendo-o-problema';
+import { lesson as dividirParaConquistar } from './resolucao-problemas/dividir-para-conquistar';
+import { lesson as padroesEReutilizacao } from './resolucao-problemas/padroes-e-reutilizacao';
+import { lesson as debuggingComoRaciocinio } from './resolucao-problemas/debugging-como-raciocinio';
+import { lesson as otimizandoSolucoes } from './resolucao-problemas/otimizando-solucoes';
+import { lesson as projetoResolucaoProblemas } from './resolucao-problemas/projeto-resolucao-problemas';
+
+// Arquitetura de Software
+import { lesson as oQueEArquitetura } from './arquitetura-software/o-que-e-arquitetura';
+import { lesson as principiosSolid } from './arquitetura-software/principios-solid';
+import { lesson as padroesDeProjeto } from './arquitetura-software/padroes-de-projeto';
+import { lesson as mvcECamadas } from './arquitetura-software/mvc-e-camadas';
+import { lesson as cleanCode } from './arquitetura-software/clean-code';
+import { lesson as projetoArquitetura } from './arquitetura-software/projeto-arquitetura';
+
 // Intro
 import { lesson as oQueEProgramacao } from './intro/o-que-e-programacao';
 import { lesson as comoComputadoresFuncionam } from './intro/como-computadores-funcionam';
@@ -157,6 +189,34 @@ import { lesson as armazenamentoLocal } from './frontend/armazenamento-local';
 import { lesson as projetoTodoList } from './frontend/projeto-todo-list';
 
 const allLessons: Lesson[] = [
+  // Estrutura de Pensamento
+  comoPensarComoDev,
+  decomposicaoNaPratica,
+  abstracaoEModelosMentais,
+  diagramasEFluxogramas,
+  documentandoOPensamento,
+  projetoEstruturaPensamento,
+  // Leitura de Codigo
+  comoAbordarCodigoDesconhecido,
+  rastreandoFluxoDeExecucao,
+  reconhecendoPadroesComuns,
+  lendoCodigoDeProducao,
+  refatorandoCodigoAlheio,
+  projetoLeituraCodigo,
+  // Resolucao de Problemas
+  entendendoOProblema,
+  dividirParaConquistar,
+  padroesEReutilizacao,
+  debuggingComoRaciocinio,
+  otimizandoSolucoes,
+  projetoResolucaoProblemas,
+  // Arquitetura de Software
+  oQueEArquitetura,
+  principiosSolid,
+  padroesDeProjeto,
+  mvcECamadas,
+  cleanCode,
+  projetoArquitetura,
   // Intro
   oQueEProgramacao,
   comoComputadoresFuncionam,
