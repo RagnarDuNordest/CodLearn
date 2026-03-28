@@ -24,6 +24,14 @@ import { lesson as debuggingComoRaciocinio } from './resolucao-problemas/debuggi
 import { lesson as otimizandoSolucoes } from './resolucao-problemas/otimizando-solucoes';
 import { lesson as projetoResolucaoProblemas } from './resolucao-problemas/projeto-resolucao-problemas';
 
+// Boas Praticas e Padroes
+import { lesson as nomenclaturaEClareza } from './boas-praticas/nomenclatura-e-clareza';
+import { lesson as funcoesEResponsabilidadeUnica } from './boas-praticas/funcoes-e-responsabilidade-unica';
+import { lesson as estruturaDeProjetos } from './boas-praticas/estrutura-de-projetos';
+import { lesson as padroesDeProjetos } from './boas-praticas/padroes-de-design';
+import { lesson as codigoLimpoNaPratica } from './boas-praticas/codigo-limpo-na-pratica';
+import { lesson as projetoRefatoracaoCompleta } from './boas-praticas/projeto-refatoracao-completa';
+
 // Arquitetura de Software
 import { lesson as oQueEArquitetura } from './arquitetura-software/o-que-e-arquitetura';
 import { lesson as principiosSolid } from './arquitetura-software/principios-solid';
@@ -210,6 +218,13 @@ const allLessons: Lesson[] = [
   debuggingComoRaciocinio,
   otimizandoSolucoes,
   projetoResolucaoProblemas,
+  // Boas Praticas e Padroes
+  nomenclaturaEClareza,
+  funcoesEResponsabilidadeUnica,
+  estruturaDeProjetos,
+  padroesDeProjetos,
+  codigoLimpoNaPratica,
+  projetoRefatoracaoCompleta,
   // Arquitetura de Software
   oQueEArquitetura,
   principiosSolid,

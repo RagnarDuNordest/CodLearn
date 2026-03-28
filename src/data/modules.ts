@@ -319,6 +319,22 @@ export const modules: Module[] = [
       'projeto-arquitetura',
     ],
   },
+  {
+    id: 'boas-praticas',
+    title: 'Boas Praticas e Padroes',
+    description: 'Escreva codigo limpo, organizado e profissional: nomenclatura, responsabilidade unica, DRY, padroes de design e estrutura de projetos.',
+    icon: 'Star',
+    color: 'text-yellow-500',
+    order: 14,
+    lessons: [
+      'nomenclatura-e-clareza',
+      'funcoes-e-responsabilidade-unica',
+      'estrutura-de-projetos',
+      'padroes-de-design',
+      'codigo-limpo-na-pratica',
+      'projeto-refatoracao-completa',
+    ],
+  },
 ];
 
 export function getModuleById(id: string): Module | undefined {
