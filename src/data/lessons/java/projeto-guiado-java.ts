@@ -6,7 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Calculadora OOP em Java',
   description:
     'Construa uma calculadora orientada a objetos em Java — o padrão de código usado em sistemas corporativos e aplicativos Android.',
-  order: 8,
+  order: 9,
   estimatedMinutes: 40,
   type: 'guided-project',
   sections: [],

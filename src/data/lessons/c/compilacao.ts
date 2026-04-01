@@ -5,7 +5,7 @@ export const lesson: Lesson = {
   moduleId: 'c',
   title: 'Compilacao e o Processo de Build',
   description: 'Entenda como seu codigo C vira um programa executavel.',
-  order: 8,
+  order: 11,
   estimatedMinutes: 12,
   sections: [
     {

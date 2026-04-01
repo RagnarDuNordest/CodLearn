@@ -5,7 +5,7 @@ export const lesson: Lesson = {
   moduleId: 'c',
   title: 'Structs em C',
   description: 'Aprenda a criar tipos de dados personalizados com structs para organizar informacoes relacionadas.',
-  order: 9,
+  order: 8,
   estimatedMinutes: 18,
   sections: [
     {

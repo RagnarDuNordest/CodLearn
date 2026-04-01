@@ -1,7 +1,7 @@
 import { Lesson } from '@/types/lesson';
 
 export const lesson: Lesson = {
-  id: 'operadores',
+  id: 'operadores-logica',
   moduleId: 'logica',
   title: 'Operadores: Aritmeticos, Comparacao e Atribuicao',
   description:
@@ -83,7 +83,7 @@ export const lesson: Lesson = {
   ],
   challenges: [
     {
-      id: 'op-c1',
+      id: 'op-logica-c1',
       title: 'Calculadora de IMC',
       description: 'Calcule o IMC = peso / altura^2. Para peso=75 e altura=1.75, exiba o IMC com 2 casas decimais e se esta na faixa saudavel (18.5 <= imc < 25.0).',
       language: 'python',
@@ -97,7 +97,7 @@ export const lesson: Lesson = {
       ],
     },
     {
-      id: 'op-c2',
+      id: 'op-logica-c2',
       title: 'Conversor de tempo',
       description: 'Dado total_segundos = 3725, calcule quantas horas, minutos e segundos ele representa usando // e %. Exiba: "3725 segundos = 1h 2m 5s".',
       language: 'python',
@@ -111,7 +111,7 @@ export const lesson: Lesson = {
       ],
     },
     {
-      id: 'op-c3',
+      id: 'op-logica-c3',
       title: 'Caixa registradora',
       description: 'Calcule o total somando 3 produtos com +=. Se total > 300, aplique 10% de desconto com *=. Com pagamento=500, calcule e mostre o troco.',
       language: 'python',

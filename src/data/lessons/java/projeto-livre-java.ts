@@ -6,7 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto Livre: Sistema de Notas com Array',
   description:
     'Crie um sistema de notas usando arrays e classes Java — similar ao que é usado em sistemas de gestão escolar corporativos.',
-  order: 9,
+  order: 10,
   estimatedMinutes: 35,
   type: 'free-project',
   sections: [],

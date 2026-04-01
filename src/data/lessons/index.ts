@@ -97,6 +97,7 @@ import { lesson as oQueEProgramacao } from './intro/o-que-e-programacao';
 import { lesson as comoComputadoresFuncionam } from './intro/como-computadores-funcionam';
 import { lesson as sistemaBinario } from './intro/sistema-binario';
 import { lesson as logicaDeProgramacao } from './intro/logica-de-programacao';
+import { lesson as gitEControleDeVersao } from './intro/git-e-controle-de-versao';
 import { lesson as projetoGuiadoIntro } from './intro/projeto-guiado-intro';
 import { lesson as projetoLivreIntro } from './intro/projeto-livre-intro';
 
@@ -199,7 +200,7 @@ import { lesson as pensamentoComputacional } from './logica/pensamento-computaci
 import { lesson as algoritmosEFluxogramas } from './logica/algoritmos-e-fluxogramas';
 import { lesson as pseudocodigo } from './logica/pseudocodigo';
 import { lesson as tiposDeDados } from './logica/tipos-de-dados';
-import { lesson as operadoresLogica } from './logica/operadores';
+import { lesson as operadoresLogica } from './logica/operadores-logica';
 import { lesson as operadoresLogicos } from './logica/operadores-logicos';
 import { lesson as funcoeseModularizacao } from './logica/funcoes-e-modularizacao';
 import { lesson as estruturasDeDecisao } from './logica/estruturas-de-decisao';
@@ -267,8 +268,8 @@ import { lesson as projetoBibliotecaPython } from './python-avancado/projeto-bib
 import { lesson as concorrenciaVsParalelismo } from './concorrencia/concorrencia-vs-paralelismo';
 import { lesson as threadsEmPython } from './concorrencia/threads-em-python';
 import { lesson as asyncAwait } from './concorrencia/async-await';
-import { lesson as multiprocessingPython } from './concorrencia/multiprocessing';
-import { lesson as problemasClassicosConcorrencia } from './concorrencia/problemas-classicos';
+import { lesson as multiprocessingPython } from './concorrencia/multiprocessing-python';
+import { lesson as problemasClassicosConcorrencia } from './concorrencia/problemas-classicos-concorrencia';
 import { lesson as projetoProcessamentoParalelo } from './concorrencia/projeto-processamento-paralelo';
 
 // Redes e Protocolos
@@ -384,6 +385,7 @@ const allLessons: Lesson[] = [
   comoComputadoresFuncionam,
   sistemaBinario,
   logicaDeProgramacao,
+  gitEControleDeVersao,
   projetoGuiadoIntro,
   projetoLivreIntro,
   // Python

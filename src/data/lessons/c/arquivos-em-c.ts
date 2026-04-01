@@ -5,7 +5,7 @@ export const lesson: Lesson = {
   moduleId: 'c',
   title: 'Manipulacao de Arquivos em C',
   description: 'Aprenda a ler e escrever arquivos de texto e binarios usando as funcoes da biblioteca stdio.h.',
-  order: 10,
+  order: 9,
   estimatedMinutes: 20,
   sections: [
     {
