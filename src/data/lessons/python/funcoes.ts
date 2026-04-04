@@ -120,6 +120,9 @@ print(eh_par(0))   # True`,
         'Use return para retornar True ou False diretamente',
         'A expressao numero % 2 == 0 ja retorna um booleano, nao precisa de if',
       ],
+      testCases: [
+        { description: 'eh_par(4) deve retornar True', expectedOutput: 'True\nFalse\nTrue' },
+      ],
     },
     {
       id: 'func-c2',
@@ -149,6 +152,9 @@ print(fatorial(3))   # 6`,
         'Comece com resultado = 1 (pois 0! = 1 e multiplicar por 1 nao muda nada)',
         'Use um laco for com range(1, n + 1) para multiplicar todos os numeros',
         'Dentro do laco, use resultado *= i para ir multiplicando',
+      ],
+      testCases: [
+        { description: 'fatorial(0)=1, fatorial(5)=120, fatorial(3)=6', expectedOutput: '1\n120\n6' },
       ],
     },
     {
@@ -190,6 +196,12 @@ print(f"Original: {original}C -> {convertido}F -> {volta}C")`,
         'Para Celsius para Fahrenheit: multiplique por 9/5 e some 32',
         'Para Fahrenheit para Celsius: subtraia 32 e multiplique por 5/9',
         'Use return para retornar o valor calculado em cada funcao',
+      ],
+      testCases: [
+        {
+          description: '100°C = 212°F e 212°F = 100°C',
+          expectedOutput: '100C = 212.0F\n212F = 100.0C\n0C = 32.0F\n32F = 0.0C\nOriginal: 37.5C -> 99.5F -> 37.5C',
+        },
       ],
     },
   ],

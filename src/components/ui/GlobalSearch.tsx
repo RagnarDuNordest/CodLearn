@@ -1,11 +1,18 @@
 'use client';
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { Search, X, BookOpen, Hammer } from 'lucide-react';
 import { getAllLessons } from '@/data/lessons';
 import { getModuleById } from '@/data/modules';
 import { Lesson } from '@/types/lesson';
+import Fuse from 'fuse.js';
+
+interface FuseItem {
+  lesson: Lesson;
+  moduleName: string;
+  moduleDescription: string;
+}
 
 interface SearchResult {
   lesson: Lesson;
@@ -21,27 +28,45 @@ export default function GlobalSearch() {
   const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
-  const search = useCallback((q: string) => {
-    if (!q.trim()) {
-      setResults([]);
-      return;
-    }
-    const lower = q.toLowerCase();
-    const lessons = getAllLessons();
-    const matched: SearchResult[] = [];
-
-    for (const lesson of lessons) {
-      if (matched.length >= 8) break;
-      const titleMatch = lesson.title.toLowerCase().includes(lower);
-      const descMatch = lesson.description.toLowerCase().includes(lower);
-      if (titleMatch || descMatch) {
-        const mod = getModuleById(lesson.moduleId);
-        matched.push({ lesson, moduleName: mod?.title ?? lesson.moduleId });
-      }
-    }
-
-    setResults(matched);
+  const fuse = useMemo(() => {
+    const items: FuseItem[] = getAllLessons().map((lesson) => {
+      const mod = getModuleById(lesson.moduleId);
+      return {
+        lesson,
+        moduleName: mod?.title ?? lesson.moduleId,
+        moduleDescription: mod?.description ?? '',
+      };
+    });
+    return new Fuse(items, {
+      keys: [
+        { name: 'lesson.title', weight: 3 },
+        { name: 'lesson.description', weight: 2 },
+        { name: 'moduleName', weight: 1 },
+        { name: 'moduleDescription', weight: 0.5 },
+      ],
+      threshold: 0.4,
+      includeScore: true,
+      ignoreLocation: true,
+      minMatchCharLength: 2,
+    });
   }, []);
+
+  const search = useCallback(
+    (q: string) => {
+      if (!q.trim()) {
+        setResults([]);
+        return;
+      }
+      const fuseResults = fuse.search(q, { limit: 12 });
+      setResults(
+        fuseResults.map((r) => ({
+          lesson: r.item.lesson,
+          moduleName: r.item.moduleName,
+        }))
+      );
+    },
+    [fuse]
+  );
 
   useEffect(() => {
     search(query);

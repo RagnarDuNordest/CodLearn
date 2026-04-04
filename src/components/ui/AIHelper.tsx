@@ -1,7 +1,11 @@
 'use client';
 
-import { useState, useRef, useEffect, useCallback } from 'react';
+import { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+import { usePathname } from 'next/navigation';
 import { Bot, X, Send, Minimize2, Maximize2, Trash2 } from 'lucide-react';
+import { getLessonById } from '@/data/lessons';
+import { getModuleById } from '@/data/modules';
+import { getProgress } from '@/lib/progress';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -77,7 +81,29 @@ function parseInline(text: string): React.ReactNode[] {
   return parts;
 }
 
-export default function AIHelper({ context }: AIHelperProps) {
+export default function AIHelper({ context: propContext }: AIHelperProps) {
+  const pathname = usePathname();
+
+  const context = useMemo(() => {
+    if (propContext) return propContext;
+    // Auto-detect from URL: /licao/[moduleId]/[lessonId]
+    const match = pathname?.match(/^\/licao\/([^/]+)\/([^/]+)/);
+    if (!match) return undefined;
+    const [, moduleId, lessonId] = match;
+    const lesson = getLessonById(lessonId, moduleId);
+    const mod = getModuleById(moduleId);
+    if (!lesson || !mod) return undefined;
+    const progress = getProgress();
+    const modLessonIds = mod.lessons ?? [];
+    const completedInModule = modLessonIds.filter((id) => progress.lessons[id]?.completed).length;
+    const totalCompleted = Object.values(progress.lessons).filter((l) => l.completed).length;
+    return [
+      `Modulo: ${mod.title} (${completedInModule}/${modLessonIds.length} licoes concluidas)`,
+      `Licao atual: "${lesson.title}" — ${lesson.description}`,
+      `Progresso total do aluno: ${totalCompleted} licoes concluidas na plataforma`,
+    ].join(' | ');
+  }, [pathname, propContext]);
+
   const [open, setOpen] = useState(false);
   const [minimized, setMinimized] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);

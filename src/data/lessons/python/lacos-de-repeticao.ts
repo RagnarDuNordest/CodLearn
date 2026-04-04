@@ -120,6 +120,12 @@ for i in range(1, 11):
         'Dentro do laco, multiplique o numero pela variavel do laco',
         'Use f-string para formatar a saida: f"{numero} x {i} = {resultado}"',
       ],
+      testCases: [
+        {
+          description: 'Tabuada do 7 de 1 a 10',
+          expectedOutput: '7 x 1 = 7\n7 x 2 = 14\n7 x 3 = 21\n7 x 4 = 28\n7 x 5 = 35\n7 x 6 = 42\n7 x 7 = 49\n7 x 8 = 56\n7 x 9 = 63\n7 x 10 = 70',
+        },
+      ],
     },
     {
       id: 'lac-c2',
@@ -145,6 +151,9 @@ print(f"A soma de 1 ate {n} e: {soma}")`,
         'Use range(1, n + 1) para incluir o proprio n na soma',
         'Dentro do laco, use soma += i para adicionar cada numero',
       ],
+      testCases: [
+        { description: 'Soma de 1 a 100 = 5050', expectedOutput: 'A soma de 1 ate 100 e: 5050' },
+      ],
     },
     {
       id: 'lac-c3',
@@ -169,6 +178,12 @@ print(f"Total de numeros pares: {contador}")`,
         'Um numero e impar quando i % 2 != 0 (o resto da divisao por 2 nao e zero)',
         'Use continue para pular para a proxima iteracao quando o numero for impar',
         'Crie um contador antes do laco e incremente-o a cada numero par encontrado',
+      ],
+      testCases: [
+        {
+          description: 'Pares de 1 a 20 e total = 10',
+          expectedOutput: '2\n4\n6\n8\n10\n12\n14\n16\n18\n20\nTotal de numeros pares: 10',
+        },
       ],
     },
   ],

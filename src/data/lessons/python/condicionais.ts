@@ -124,6 +124,11 @@ else:
         'Use elif para a segunda condicao em vez de outro if',
         'O else cobre o caso restante (zero), sem precisar de condicao',
       ],
+      testCases: [
+        { description: 'Numero negativo (-5)', expectedOutput: 'O numero e negativo' },
+        { description: 'Numero positivo: altere numero = 8', expectedOutput: 'O numero e positivo' },
+        { description: 'Numero zero: altere numero = 0', expectedOutput: 'O numero e zero' },
+      ],
     },
     {
       id: 'cond-c2',
@@ -152,6 +157,12 @@ else:
         'Comece verificando da menor faixa para a maior',
         'Se a primeira condicao (idade <= 11) falhou, ja sabemos que idade >= 12',
         'O else final cobre todos os casos de 60 para cima',
+      ],
+      testCases: [
+        { description: 'Adulto (25 anos)', expectedOutput: 'Adulto' },
+        { description: 'Crianca: altere idade = 8', expectedOutput: 'Crianca' },
+        { description: 'Adolescente: altere idade = 15', expectedOutput: 'Adolescente' },
+        { description: 'Idoso: altere idade = 70', expectedOutput: 'Idoso' },
       ],
     },
     {
@@ -188,6 +199,20 @@ print(f"Valor final: R\${valor_final:.2f}")`,
         'Primeiro defina o percentual de desconto com if/elif/else',
         'Calcule o valor do desconto multiplicando o valor da compra pelo percentual',
         'Use :.2f no f-string para formatar valores monetarios com 2 casas decimais',
+      ],
+      testCases: [
+        {
+          description: 'Compra de R$350 — desconto de 10%',
+          expectedOutput: 'Desconto: 10%\nValor do desconto: R$35.00\nValor final: R$315.00',
+        },
+        {
+          description: 'Compra de R$600 — desconto de 20%: altere valor_compra = 600',
+          expectedOutput: 'Desconto: 20%\nValor do desconto: R$120.00\nValor final: R$480.00',
+        },
+        {
+          description: 'Compra de R$100 — sem desconto: altere valor_compra = 100',
+          expectedOutput: 'Desconto: 0%\nValor do desconto: R$0.00\nValor final: R$100.00',
+        },
       ],
     },
   ],
