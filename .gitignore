@@ -4,3 +4,11 @@ out/
 .env
 .env.local
 .env*.local
+
+# Artifacts from other machines
+*-DESKTOP-*.json
+*-DESKTOP-*.ts
+*-DESKTOP-*.mjs
+src/.claude/
+src/package-lock.json
+src/tsconfig*.tsbuildinfo
