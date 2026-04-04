@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Debugging nao e so corrigir erros -- e uma habilidade de investigacao e raciocinio. Aprenda a ler mensagens de erro, rastrear bugs com prints, usar o metodo da biseccao e pensar como um detetive ao depurar codigo.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

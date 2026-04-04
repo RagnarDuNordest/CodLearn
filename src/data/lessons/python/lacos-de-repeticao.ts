@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Lacos de Repeticao (for/while)',
   description: 'Aprenda a repetir acoes automaticamente usando for e while.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Introducao ao JavaScript',
   description: 'Aprenda os fundamentos do JavaScript: variaveis, tipos de dados e funcoes.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

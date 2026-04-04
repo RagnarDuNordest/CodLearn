@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda os conceitos de APIs REST, os verbos HTTP (GET, POST, PUT, DELETE), o formato JSON e como projetar endpoints.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

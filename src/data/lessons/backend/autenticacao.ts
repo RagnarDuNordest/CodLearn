@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda conceitos de autenticação, sessões, tokens JWT, hash de senhas e como proteger rotas da sua API.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

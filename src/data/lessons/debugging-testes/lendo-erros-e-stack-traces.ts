@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Lendo Erros e Stack Traces',
   description: 'Aprenda a interpretar mensagens de erro e stack traces para encontrar a causa raiz de um problema rapidamente',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

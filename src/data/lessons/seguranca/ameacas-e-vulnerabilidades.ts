@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Ameacas e Vulnerabilidades',
   description: 'Entenda o modelo CIA, as 10 vulnerabilidades mais criticas do OWASP e como pensar como um atacante para proteger seus sistemas',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

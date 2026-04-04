@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Descubra a diferenca entre o pensamento humano comum e o pensamento computacional, e aprenda a abordagem sistematica que todo desenvolvedor usa para resolver problemas complexos.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

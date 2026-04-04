@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Domine os operadores aritmeticos, de comparacao, logicos e de atribuicao da linguagem Java.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

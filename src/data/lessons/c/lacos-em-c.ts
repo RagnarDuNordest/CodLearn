@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Lacos de Repeticao em C',
   description: 'Aprenda a usar for, while e do-while em C.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

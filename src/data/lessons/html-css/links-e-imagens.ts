@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a criar links para outras paginas, inserir imagens e usar figure e figcaption para legendas semanticas.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

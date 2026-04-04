@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a tratar erros e excecoes com try-catch-finally, throw, throws e como criar suas proprias excecoes personalizadas.',
   order: 8,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

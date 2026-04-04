@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Complexidade de Algoritmos e Notacao Big O',
   description: 'Aprenda a analisar a eficiencia de algoritmos usando a notacao Big O e entenda por que isso importa.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 22,
   sections: [
     {

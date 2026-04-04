@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Funcoes',
   description: 'Aprenda a criar funcoes para organizar e reutilizar seu codigo.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

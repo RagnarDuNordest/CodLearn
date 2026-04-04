@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a usar parametros de rota, query strings, metodos de requisicao e receber dados JSON no corpo da requisicao.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

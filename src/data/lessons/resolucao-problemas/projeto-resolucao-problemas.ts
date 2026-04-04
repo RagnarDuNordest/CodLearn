@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aplique toda a metodologia de resolucao de problemas aprendida no modulo para construir, do zero, um sistema completo de calculo de notas com estatisticas -- seguindo cada etapa: entender, decompor, resolver, depurar e otimizar.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 40,
   sections: [
     {

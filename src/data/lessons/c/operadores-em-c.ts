@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Operadores em C',
   description: 'Conheca os operadores aritmeticos, de comparacao e logicos em C.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

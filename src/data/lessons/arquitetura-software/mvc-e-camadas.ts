@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Arquitetura em Camadas e MVC',
   description: 'Entenda como separar seu sistema em camadas independentes usando o padrao MVC (Model-View-Controller), o padrao de arquitetura mais usado em frameworks web modernos.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

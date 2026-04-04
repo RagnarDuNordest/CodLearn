@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Manipulando o DOM',
   description: 'Aprenda a selecionar e modificar elementos HTML com JavaScript.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

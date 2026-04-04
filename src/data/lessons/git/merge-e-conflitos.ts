@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda como unir branches com git merge, entenda a diferenca entre fast-forward e merge commit, e saiba como resolver conflitos de merge.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

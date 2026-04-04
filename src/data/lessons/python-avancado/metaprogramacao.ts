@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Metaprogramacao',
   description: 'Inspecione e modifique objetos em tempo de execucao usando __dunder__ methods, descritores e metaclasses',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

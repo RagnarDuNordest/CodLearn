@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'O que e React',
   description: 'Entenda o que e React, por que ele existe, como funciona o JSX e como criar seu primeiro componente funcional',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

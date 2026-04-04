@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Domine o redirecionamento de entrada e saida, pipes para encadear comandos, e operadores logicos para criar fluxos poderosos no terminal.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

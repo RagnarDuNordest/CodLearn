@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'SQL Injection',
   description: 'Como funciona o ataque de SQL Injection, por que e tao devastador, e como prevenir completamente com prepared statements e queries parametrizadas',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

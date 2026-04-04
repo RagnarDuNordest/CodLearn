@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Ambiente Python Profissional',
   description: 'Configure do zero um projeto Python completo: venv, requirements, variaveis de ambiente, .gitignore e Makefile integrado',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 45,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Testes Unitarios com pytest',
   description: 'Aprenda a usar o pytest, o framework de testes mais popular do Python, para escrever e organizar seus testes de forma profissional',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

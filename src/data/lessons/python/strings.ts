@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Strings e Manipulacao de Texto',
   description: 'Aprenda a trabalhar com textos em Python.',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

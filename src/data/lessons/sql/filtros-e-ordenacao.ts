@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Domine os filtros avancados com WHERE (AND, OR, NOT, IN, BETWEEN, LIKE), ordene resultados com ORDER BY, limite com LIMIT e elimine duplicatas com DISTINCT.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

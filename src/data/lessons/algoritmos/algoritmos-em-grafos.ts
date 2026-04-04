@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Algoritmos em Grafos: BFS, DFS e Caminhos',
   description: 'Aprenda a percorrer grafos com BFS e DFS e a encontrar o caminho mais curto com Dijkstra.',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 28,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'XSS e CSRF',
   description: 'Entenda como ataques de Cross-Site Scripting e Cross-Site Request Forgery funcionam, como injetam codigo malicioso e como se proteger com escape de output, CSP e tokens CSRF',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

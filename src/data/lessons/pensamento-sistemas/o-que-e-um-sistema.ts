@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'O que e um Sistema',
   description: 'Entenda o que e um sistema, seus componentes fundamentais e como pensar em sistemas em vez de linhas de codigo isoladas',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda o que e controle de versao, como usar o Git para rastrear mudancas no seu codigo, trabalhar com branches, e como usar o GitHub para colaborar com outros programadores.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

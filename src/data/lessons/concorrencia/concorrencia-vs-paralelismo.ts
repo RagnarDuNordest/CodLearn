@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Concorrencia vs Paralelismo',
   description: 'Entenda a diferenca fundamental entre concorrencia e paralelismo, processos vs threads vs coroutines, e quando usar cada abordagem',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a usar o GitHub para colaborar em projetos: fork, pull requests, issues, README.md, colaboracao em equipe e GitHub Pages.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

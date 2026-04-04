@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Array Methods: map, filter e reduce',
   description: 'Domine os tres metodos mais importantes de arrays em JavaScript.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

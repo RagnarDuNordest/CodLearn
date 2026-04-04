@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda o que sao transacoes, as propriedades ACID que garantem a integridade dos dados, como usar BEGIN/COMMIT/ROLLBACK, os niveis de isolamento e como evitar deadlocks.',
   order: 10,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

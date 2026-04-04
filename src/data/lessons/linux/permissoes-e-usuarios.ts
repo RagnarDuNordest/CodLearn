@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda o sistema de permissoes do Linux, como controlar quem pode ler, escrever e executar arquivos, e como funcionam usuarios e grupos.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

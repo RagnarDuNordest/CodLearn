@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Autenticacao e Senhas',
   description: 'Por que nunca armazenar senhas em texto puro, como funciona hashing com bcrypt e como implementar autenticacao segura com JWT',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

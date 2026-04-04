@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Rastreando o Fluxo de Execucao',
   description: 'Aprenda a seguir o caminho dos dados pelo codigo como um detetive',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

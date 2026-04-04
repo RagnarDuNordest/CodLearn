@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Estrutura de Projetos',
   description: 'Como organizar arquivos e pastas para projetos que crescem sem virar um caos',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Criando Imagens com Dockerfile',
   description: 'Aprenda a criar suas proprias imagens Docker usando Dockerfile: instrucoes FROM, RUN, COPY, WORKDIR, EXPOSE, CMD e ENTRYPOINT',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

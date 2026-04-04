@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Algoritmos Gulosos (Greedy)',
   description: 'Aprenda a estrategia gulosa: fazer a melhor escolha local esperando chegar na solucao global.',
   order: 7,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Extensoes Essenciais',
   description: 'As extensoes mais importantes do VS Code: Python, GitLens, Prettier, ESLint, Thunder Client, Remote SSH e Error Lens. Como instalar e configurar cada uma',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

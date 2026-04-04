@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'WebSockets e Tempo Real',
   description: 'Entenda como WebSockets permitem comunicacao bidirecional em tempo real e quando usar em vez de HTTP polling',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

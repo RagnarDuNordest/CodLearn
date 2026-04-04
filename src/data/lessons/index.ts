@@ -134,14 +134,14 @@ import { lesson as preprocessador } from './c/preprocessador';
 import { lesson as compilacao } from './c/compilacao';
 
 // Estruturas de Dados
-import { lesson as projetoGuiadoEstruturas } from './estruturas-de-dados/projeto-guiado-estruturas';
-import { lesson as projetoLivreEstruturas } from './estruturas-de-dados/projeto-livre-estruturas';
-import { lesson as arraysEVetores } from './estruturas-de-dados/arrays-e-vetores';
-import { lesson as pilhasEFilas } from './estruturas-de-dados/pilhas-e-filas';
-import { lesson as listasEncadeadas } from './estruturas-de-dados/listas-encadeadas';
-import { lesson as arvoresBinarias } from './estruturas-de-dados/arvores-binarias';
-import { lesson as tabelasHash } from './estruturas-de-dados/tabelas-hash';
-import { lesson as grafos } from './estruturas-de-dados/grafos';
+import { lesson as projetoGuiadoEstruturas } from './estruturas/projeto-guiado-estruturas';
+import { lesson as projetoLivreEstruturas } from './estruturas/projeto-livre-estruturas';
+import { lesson as arraysEVetores } from './estruturas/arrays-e-vetores';
+import { lesson as pilhasEFilas } from './estruturas/pilhas-e-filas';
+import { lesson as listasEncadeadas } from './estruturas/listas-encadeadas';
+import { lesson as arvoresBinarias } from './estruturas/arvores-binarias';
+import { lesson as tabelasHash } from './estruturas/tabelas-hash';
+import { lesson as grafos } from './estruturas/grafos';
 
 // Algoritmos
 import { lesson as projetoGuiadoAlgoritmos } from './algoritmos/projeto-guiado-algoritmos';
@@ -580,7 +580,10 @@ export function getAllLessons(): Lesson[] {
   return allLessons;
 }
 
-export function getLessonById(id: string): Lesson | undefined {
+export function getLessonById(id: string, moduleId?: string): Lesson | undefined {
+  if (moduleId) {
+    return allLessons.find((l) => l.id === id && l.moduleId === moduleId);
+  }
   return lessonsMap[id];
 }
 

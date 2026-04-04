@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a enxergar padroes repetidos no seu codigo e na realidade, extrair esses padroes em funcoes reutilizaveis, e aplicar o principio DRY para escrever codigo mais limpo e poderoso.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

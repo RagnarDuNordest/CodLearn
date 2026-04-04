@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a trabalhar com repositorios remotos usando git remote, git push, git pull, git clone e git fetch para sincronizar seu codigo com a nuvem.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

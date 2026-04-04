@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda sobre os tipos primitivos do Java, como declarar variaveis, usar constantes com final, fazer casting e trabalhar com Strings.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

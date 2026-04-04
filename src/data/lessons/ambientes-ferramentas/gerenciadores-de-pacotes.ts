@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Gerenciadores de Pacotes',
   description: 'Domine pip para Python e npm/yarn para JavaScript: instale, remova e gerencie dependencias como um profissional',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

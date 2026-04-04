@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: App de Tarefas Completo',
   description: 'Construa um gerenciador de tarefas completo com CRUD, filtros, persistencia e boas praticas de React',
   order: 7,
+  type: 'lesson',
   estimatedMinutes: 60,
   sections: [
     {

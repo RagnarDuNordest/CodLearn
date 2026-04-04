@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a escrever pseudocodigo para planejar a logica dos seus programas antes de codificar, e veja como converter pseudocodigo para Python.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

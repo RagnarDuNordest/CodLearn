@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Variaveis de Ambiente',
   description: 'Proteja segredos e configure sua aplicacao com variaveis de ambiente, arquivos .env e python-dotenv',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

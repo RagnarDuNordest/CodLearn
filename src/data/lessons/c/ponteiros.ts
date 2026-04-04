@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Ponteiros',
   description: 'Entenda ponteiros — o conceito mais importante (e temido!) de C.',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

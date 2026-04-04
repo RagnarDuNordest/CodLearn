@@ -29,13 +29,13 @@ export default function LessonPage({
   params: Promise<{ moduleId: string; lessonId: string }>;
 }) {
   const { moduleId, lessonId } = use(params);
-  const lesson = getLessonById(lessonId);
+  const lesson = getLessonById(lessonId, moduleId);
   const mod = getModuleById(moduleId);
 
   const { markCompleted, isLessonCompleted } = useProgress();
   const [showCertificate, setShowCertificate] = useState(false);
 
-  if (!lesson || !mod || lesson.moduleId !== moduleId) {
+  if (!lesson || !mod) {
     notFound();
   }
 

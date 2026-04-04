@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Listas',
   description: 'Aprenda a armazenar e manipular colecoes de dados usando listas.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

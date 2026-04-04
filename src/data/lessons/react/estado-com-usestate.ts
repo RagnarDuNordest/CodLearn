@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Estado com useState',
   description: 'Entenda o que e estado em React, como usar o hook useState para criar dados reativos e por que nunca mutar o estado diretamente',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

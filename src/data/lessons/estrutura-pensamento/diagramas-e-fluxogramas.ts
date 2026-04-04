@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a desenhar fluxogramas para visualizar a logica do seu programa antes de escrever codigo, e entenda como os simbolos representam diferentes tipos de instrucoes.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

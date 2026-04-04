@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Atalhos e Produtividade',
   description: 'Domine os atalhos mais poderosos do VS Code: multi-cursor, selecao de coluna, mover linhas, busca e substituicao global e renomear simbolo',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

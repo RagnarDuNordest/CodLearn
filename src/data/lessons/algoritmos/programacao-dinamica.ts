@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Programacao Dinamica',
   description: 'Aprenda a tecnica de programacao dinamica para resolver problemas complexos dividindo-os em subproblemas menores.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

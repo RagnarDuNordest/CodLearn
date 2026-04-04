@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Classes e Objetos',
   description: 'Aprenda os fundamentos da Programacao Orientada a Objetos com classes, objetos e heranca.',
   order: 9,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

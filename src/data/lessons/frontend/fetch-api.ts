@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Fetch API',
   description: 'Aprenda a consumir APIs REST e buscar dados externos com JavaScript.',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 18,
   sections: [
     {

@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda os fundamentos da logica algoritmica, como criar fluxogramas e pseudocodigo, e como transformar suas ideias em instrucoes que o computador pode executar.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

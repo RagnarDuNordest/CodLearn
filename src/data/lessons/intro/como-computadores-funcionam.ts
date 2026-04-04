@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda os componentes basicos de um computador, a diferenca entre hardware e software, e como um programa e executado passo a passo.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

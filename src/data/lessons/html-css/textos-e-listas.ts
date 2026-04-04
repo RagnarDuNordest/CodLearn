@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a usar titulos, paragrafos, formatacao de texto, citacoes e listas ordenadas e nao ordenadas em HTML.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

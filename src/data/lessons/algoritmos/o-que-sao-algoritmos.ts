@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'O que sao Algoritmos?',
   description: 'Entenda o conceito de algoritmos e como analisar sua eficiencia.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

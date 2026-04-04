@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Lendo Codigo de Producao Real',
   description: 'Como navegar em bases de codigo grandes sem se perder',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

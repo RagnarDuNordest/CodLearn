@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'O que e Docker',
   description: 'Entenda o que sao containers, como Docker surgiu, a diferenca entre imagens e containers, e como o Docker Hub funciona',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

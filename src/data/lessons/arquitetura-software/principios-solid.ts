@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Os 5 Principios SOLID',
   description: 'Aprenda os 5 principios SOLID que guiam o design orientado a objetos e tornam seu codigo mais flexivel, testavel e facil de manter.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

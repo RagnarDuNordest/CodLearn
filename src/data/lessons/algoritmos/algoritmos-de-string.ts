@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Algoritmos de String',
   description: 'Domine tecnicas avancadas para busca, comparacao e transformacao de textos com eficiencia.',
   order: 11,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

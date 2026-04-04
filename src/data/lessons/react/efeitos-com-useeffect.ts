@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Efeitos com useEffect',
   description: 'Aprenda a lidar com side effects em React: buscar dados de APIs, sincronizar com sistemas externos e fazer limpeza de recursos com useEffect',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

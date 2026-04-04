@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Props e Composicao',
   description: 'Como passar dados entre componentes com props, usar a prop children e compor interfaces complexas a partir de componentes simples',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

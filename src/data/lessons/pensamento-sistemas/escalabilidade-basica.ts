@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Escalabilidade Basica',
   description: 'Entenda o que significa escalar um sistema, como identificar gargalos e as tecnicas basicas para resolve-los',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

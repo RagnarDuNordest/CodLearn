@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Variaveis e Tipos em C',
   description: 'Entenda como declarar variaveis e os tipos de dados em C.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Domine os comandos para ler, buscar, contar e transformar conteudo de arquivos de texto diretamente no terminal.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

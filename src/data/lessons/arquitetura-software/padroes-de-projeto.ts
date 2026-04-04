@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Padroes de Projeto (Design Patterns)',
   description: 'Aprenda o que sao design patterns, por que existem, e como usar Singleton, Factory e Observer para resolver problemas recorrentes de forma elegante.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

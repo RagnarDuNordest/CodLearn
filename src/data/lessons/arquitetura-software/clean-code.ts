@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Clean Code: Escrevendo Codigo que Outros Entendem',
   description: 'Aprenda os principios do Clean Code: nomes descritivos, funcoes pequenas, comentarios uteis e refatoracao — tecnicas para escrever codigo que qualquer desenvolvedor consegue entender e manter.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

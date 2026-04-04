@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Seu Primeiro Programa em C',
   description: 'Escreva e entenda seu primeiro programa na linguagem C.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

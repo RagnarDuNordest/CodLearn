@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Como a Internet Funciona',
   description: 'Entenda o modelo em camadas, IP, DNS, roteamento e o que acontece quando voce digita uma URL no navegador',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

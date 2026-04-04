@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda os 4 pilares do pensamento computacional e como aplicar essa forma de pensar para resolver qualquer problema de forma estruturada.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

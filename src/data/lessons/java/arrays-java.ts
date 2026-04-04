@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a declarar, acessar e percorrer arrays, usar Arrays.sort, ArrayList e o laco for-each em Java.',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

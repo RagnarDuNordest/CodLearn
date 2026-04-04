@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'O Que E Debugging',
   description: 'Entenda o que e debugging, por que bugs existem e como pensar de forma sistematica para encontrar e corrigir erros',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

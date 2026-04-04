@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a criar metodos estaticos, definir parametros, tipos de retorno, void e usar sobrecarga de metodos (overloading).',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Modulos e Imports',
   description: 'Aprenda a organizar seu codigo em modulos e usar bibliotecas externas.',
   order: 11,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

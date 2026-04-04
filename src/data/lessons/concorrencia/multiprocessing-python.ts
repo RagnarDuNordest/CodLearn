@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Multiprocessing',
   description: 'Aprenda a usar multiplos processos para paralelismo real em Python, contornando o GIL para tarefas intensivas de CPU',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

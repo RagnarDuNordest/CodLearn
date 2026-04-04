@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda o que e CSS, como funcionam os seletores, as propriedades basicas de estilo e como conectar CSS ao HTML.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

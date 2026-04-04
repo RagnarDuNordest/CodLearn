@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a usar for, while e do-while para repetir blocos de codigo, alem de break, continue e uma previa do for-each.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

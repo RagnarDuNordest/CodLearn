@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Condicionais (if/elif/else)',
   description: 'Aprenda a fazer seu programa tomar decisoes usando condicionais.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

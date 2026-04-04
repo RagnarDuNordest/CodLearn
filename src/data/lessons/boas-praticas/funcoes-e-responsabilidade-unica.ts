@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Funcoes e Responsabilidade Unica',
   description: 'Como escrever funcoes pequenas, previsiveis e reutilizaveis',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

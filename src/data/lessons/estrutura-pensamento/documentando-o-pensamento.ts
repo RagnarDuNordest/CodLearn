@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a escrever pseudocodigo eficaz, comentar codigo de forma util e documentar seu raciocinio antes de comecar a programar -- habitos que separam desenvolvedores bons de excelentes.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

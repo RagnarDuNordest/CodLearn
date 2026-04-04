@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a inserir dados com INSERT INTO, consultar com SELECT, filtrar com WHERE e selecionar todas as colunas com SELECT *.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 18,
   sections: [
     {

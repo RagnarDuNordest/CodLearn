@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Documentando Decisoes de Arquitetura com ADR',
   description: 'Aprenda a registrar decisoes tecnicas importantes usando Architecture Decision Records, garantindo que o contexto e o raciocinio por tras das escolhas nao se percam com o tempo.',
   order: 10,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

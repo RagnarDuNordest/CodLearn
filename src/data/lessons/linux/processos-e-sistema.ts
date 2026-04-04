@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a monitorar processos em execucao, gerenciar tarefas em segundo plano e verificar o uso de recursos do sistema.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

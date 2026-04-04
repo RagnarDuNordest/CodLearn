@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Tratamento de Erros',
   description: 'Aprenda a lidar com erros no seu codigo usando try/except e torne seus programas mais robustos.',
   order: 8,
+  type: 'lesson',
   estimatedMinutes: 18,
   sections: [
     {

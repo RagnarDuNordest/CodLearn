@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Pre-processador em C',
   description: 'Domine as diretivas do pre-processador: #include, #define, macros, compilacao condicional e include guards.',
   order: 10,
+  type: 'lesson',
   estimatedMinutes: 16,
   sections: [
     {

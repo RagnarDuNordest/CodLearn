@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Reconhecendo Padroes Comuns',
   description: 'Os mesmos padroes aparecem em todo codigo — aprenda a identifica-los instantaneamente',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

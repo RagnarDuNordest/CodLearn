@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Primeiros Passos com Docker',
   description: 'Aprenda os comandos essenciais do Docker: run, pull, ps, images, stop, rm e como rodar containers interativos',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Objetos em JavaScript',
   description: 'Aprenda a usar objetos em JS: propriedades, metodos e JSON.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 18,
   sections: [
     {

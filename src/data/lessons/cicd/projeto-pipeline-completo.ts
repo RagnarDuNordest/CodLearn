@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Pipeline Completo',
   description: 'Crie um pipeline CI/CD completo com lint (flake8), testes (pytest), build de imagem Docker e notificacao de status',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 60,
   sections: [
     {

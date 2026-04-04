@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a criar tabelas com CREATE TABLE, os tipos de dados do SQL, restricoes como PRIMARY KEY e NOT NULL, e como remover tabelas com DROP TABLE.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 18,
   sections: [
     {

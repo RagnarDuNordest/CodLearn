@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Eventos',
   description: 'Aprenda a reagir a acoes do usuario como cliques, digitacao e envio de formularios.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

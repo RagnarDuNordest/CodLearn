@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Decomposicao de Sistemas',
   description: 'Como quebrar um sistema grande em subsistemas menores, coesos e pouco acoplados',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

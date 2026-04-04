@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a estrategia mais poderosa da computacao: quebrar problemas grandes em problemas menores ate que cada pedaco seja facil de resolver -- e como isso aparece em algoritmos reais.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

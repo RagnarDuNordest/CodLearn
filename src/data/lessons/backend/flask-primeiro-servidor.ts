@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a instalar o Flask, criar sua primeira rota, rodar o servidor e retornar HTML e JSON.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

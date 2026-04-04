@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Context e Estado Global',
   description: 'Compartilhe estado entre componentes distantes sem prop drilling usando Context API',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda por que entender o problema profundamente antes de escrever qualquer codigo e a habilidade mais importante de um programador -- e como fazer isso de forma sistematica.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

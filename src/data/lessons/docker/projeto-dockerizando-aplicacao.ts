@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Dockerizando uma Aplicacao',
   description: 'Projeto completo: dockerize uma aplicacao Flask com PostgreSQL usando docker-compose, volumes para dados e variaveis de ambiente',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 60,
   sections: [
     {

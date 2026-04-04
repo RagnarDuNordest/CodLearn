@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Armazenamento Local',
   description: 'Aprenda a salvar dados no navegador com localStorage e sessionStorage.',
   order: 7,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Algoritmos Gulosos Avancados',
   description: 'Algoritmos de Huffman, Kruskal e Dijkstra — gulosos classicos para compressao, arvores geradoras e caminhos minimos',
   order: 12,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

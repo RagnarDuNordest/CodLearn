@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda o conceito de banco de dados, os tipos existentes (relacional vs NoSQL), o que e SQL e os principais SGBDs do mercado.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

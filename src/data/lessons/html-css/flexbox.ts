@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Domine o Flexbox para criar layouts flexiveis com alinhamento e distribuicao de espacos entre elementos.',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

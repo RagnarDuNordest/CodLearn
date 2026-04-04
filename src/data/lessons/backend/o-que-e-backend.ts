@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda o modelo cliente-servidor, o protocolo HTTP, como funcionam requisicoes e respostas, status codes e URLs.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

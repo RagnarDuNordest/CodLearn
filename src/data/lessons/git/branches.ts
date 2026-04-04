@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda o que sao branches, como criar, trocar, listar e deletar ramificacoes no Git, e entenda o conceito de HEAD.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

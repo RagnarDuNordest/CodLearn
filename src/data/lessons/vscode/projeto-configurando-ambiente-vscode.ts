@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Configurando um Ambiente Profissional',
   description: 'Configure um workspace profissional para Python com settings.json, extensoes recomendadas, snippets personalizados e debug configurado',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 45,
   sections: [
     {

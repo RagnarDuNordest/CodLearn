@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Domain-Driven Design: modelando o negocio no codigo',
   description: 'Aprenda a criar sistemas cujo codigo fala a linguagem do negocio, usando linguagem ubiqua, entidades, objetos de valor e agregados para modelar dominios complexos.',
   order: 9,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

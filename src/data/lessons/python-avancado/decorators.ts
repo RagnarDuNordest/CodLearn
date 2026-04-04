@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Decorators',
   description: 'Entenda closures e funcoes de primeira classe para criar decorators poderosos que modificam comportamento de funcoes sem alterar seu codigo.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

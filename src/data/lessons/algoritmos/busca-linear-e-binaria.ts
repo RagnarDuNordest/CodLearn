@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Busca Linear e Busca Binaria',
   description: 'Aprenda dois algoritmos fundamentais de busca.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

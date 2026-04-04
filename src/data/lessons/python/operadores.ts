@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Operadores',
   description: 'Aprenda a usar operadores aritmeticos, de comparacao e logicos em Python.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

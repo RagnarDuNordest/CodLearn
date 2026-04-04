@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda como a abstracao esconde complexidade desnecessaria, como criar modelos mentais eficazes e a diferenca entre interface (o que algo faz) e implementacao (como algo faz).',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Promises e Async/Await',
   description: 'Entenda como JavaScript lida com operacoes assincronas.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

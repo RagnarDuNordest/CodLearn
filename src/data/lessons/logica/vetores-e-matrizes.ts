@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a trabalhar com vetores (arrays unidimensionais) e matrizes (arrays bidimensionais). Entenda como armazenar, acessar e percorrer colecoes de dados usando indices e lacos.',
   order: 8,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

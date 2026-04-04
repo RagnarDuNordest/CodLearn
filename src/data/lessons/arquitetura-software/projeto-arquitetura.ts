@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Construindo um Sistema Bem Arquitetado',
   description: 'Aplique SOLID, Clean Code e MVC para construir do zero um sistema de biblioteca com livros, usuarios e emprestimos — tomando decisoes arquiteturais conscientes a cada passo.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 45,
   sections: [
     {

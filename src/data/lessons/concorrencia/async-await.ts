@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Async e Await',
   description: 'Domine programacao assincrona com async/await, event loop e asyncio.gather para executar multiplas coroutines concorrentemente',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

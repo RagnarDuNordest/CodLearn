@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Rodando Testes no CI',
   description: 'Configure um workflow para instalar dependencias e rodar pytest automaticamente a cada push, incluindo matrix de versoes Python',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda o que e HTML, como funcionam as tags e a estrutura basica de uma pagina web com html, head e body.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

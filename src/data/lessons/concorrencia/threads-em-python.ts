@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Threads em Python',
   description: 'Aprenda a criar e gerenciar threads com threading.Thread, entenda race conditions e como preveni-las com Lock',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

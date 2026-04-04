@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a criar formularios interativos com campos de texto, selecao, botoes e diferentes tipos de input.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

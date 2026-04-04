@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Makefile e Automacao',
   description: 'Automatize tarefas repetitivas com Makefile: crie targets para testes, build, lint e limpeza com um unico comando',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

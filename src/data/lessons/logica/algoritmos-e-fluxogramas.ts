@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda o que sao algoritmos, aprenda os simbolos de fluxogramas e como representar a logica de um programa de forma visual antes de escrever codigo.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 18,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'GraphQL vs REST',
   description: 'Entenda as diferencas entre GraphQL e REST, quando cada um brilha e os trade-offs de cada abordagem',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

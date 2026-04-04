@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda o que sao variaveis, como armazenar dados e os principais tipos de dados em Python.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

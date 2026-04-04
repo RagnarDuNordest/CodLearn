@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Memoria e Alocacao Dinamica',
   description: 'Aprenda como a memoria funciona e como alocar memoria dinamicamente.',
   order: 7,
+  type: 'lesson',
   estimatedMinutes: 18,
   sections: [
     {

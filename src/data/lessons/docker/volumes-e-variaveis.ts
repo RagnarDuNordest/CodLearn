@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Volumes e Variaveis de Ambiente',
   description: 'Persista dados com volumes e bind mounts, configure aplicacoes com variaveis de ambiente e exponha portas corretamente',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

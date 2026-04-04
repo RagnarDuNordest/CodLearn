@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Window Functions',
   description: 'Calcule rankings, acumulados e comparacoes entre linhas sem agrupar os dados com window functions',
   order: 11,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Terminal Integrado',
   description: 'Domine o terminal integrado do VS Code: multiplos terminais, dividir terminal, tarefas com tasks.json, painel de problemas e output',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

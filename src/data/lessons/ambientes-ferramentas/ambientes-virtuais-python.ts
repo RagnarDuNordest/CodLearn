@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Ambientes Virtuais Python',
   description: 'Crie e gerencie ambientes virtuais com venv, instale dependencias com pip e mantenha projetos isolados e reproduziveis',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

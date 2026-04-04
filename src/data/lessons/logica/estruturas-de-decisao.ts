@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a usar estruturas condicionais como SE/ENTAO, SE/SENAO e ESCOLHA/CASO para fazer seu programa tomar decisoes. Veja exemplos em pseudocodigo e Python.',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

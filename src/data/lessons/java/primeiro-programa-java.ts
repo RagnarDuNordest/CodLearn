@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a escrever, compilar e executar seu primeiro programa Java com o famoso Hello World.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

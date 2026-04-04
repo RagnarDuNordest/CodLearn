@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Ferramentas de Debug',
   description: 'Domine o uso de debuggers, breakpoints e ferramentas de inspecao para investigar bugs de forma eficiente',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

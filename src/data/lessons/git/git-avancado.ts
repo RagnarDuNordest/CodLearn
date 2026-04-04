@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Domine tecnicas avancadas: git rebase, git stash, git cherry-pick, git reset, git revert, git tag e boas praticas com conventional commits.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

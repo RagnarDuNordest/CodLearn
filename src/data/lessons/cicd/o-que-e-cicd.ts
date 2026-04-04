@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'O que e CI/CD',
   description: 'Entenda integracao continua e entrega continua, por que automatizar e o ciclo completo: commit, build, test e deploy',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

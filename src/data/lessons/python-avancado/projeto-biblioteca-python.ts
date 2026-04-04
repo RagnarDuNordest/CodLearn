@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Biblioteca Python',
   description: 'Construa uma biblioteca Python reutilizavel com type hints, decoradores, context managers e testes',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 60,
   sections: [
     {

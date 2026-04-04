@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Variaveis e Secrets',
   description: 'Use GitHub Secrets para dados sensiveis, variaveis de ambiente no workflow e artifacts para salvar resultados de testes',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

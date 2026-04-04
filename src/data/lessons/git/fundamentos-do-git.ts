@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda o que e Git, como funciona o controle de versao, e aprenda os comandos essenciais: git init, git add, git commit, git status, git log e .gitignore.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

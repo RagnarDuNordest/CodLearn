@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Auditoria de Codigo',
   description: 'Leia, analise e documente um modulo completo como um desenvolvedor senior',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 45,
   sections: [
     {

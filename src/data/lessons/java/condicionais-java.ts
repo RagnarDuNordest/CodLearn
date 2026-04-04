@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a tomar decisoes no seu codigo usando if/else, switch/case e o operador ternario em Java.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

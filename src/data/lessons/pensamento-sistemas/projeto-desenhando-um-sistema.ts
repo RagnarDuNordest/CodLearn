@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Desenhando um Sistema do Zero',
   description: 'Coloque em pratica o pensamento em sistemas: desenhe e implemente um encurtador de URLs do zero, passando por requisitos, componentes, interfaces e implementacao',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 60,
   sections: [
     {

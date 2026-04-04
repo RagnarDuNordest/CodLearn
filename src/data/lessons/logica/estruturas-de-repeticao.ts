@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Domine os lacos de repeticao ENQUANTO, PARA e REPITA/ATE. Aprenda a usar contadores, acumuladores e sentinelas para controlar a execucao dos seus algoritmos.',
   order: 7,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

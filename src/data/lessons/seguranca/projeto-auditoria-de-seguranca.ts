@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Auditoria de Seguranca',
   description: 'Audite um sistema web completo com multiplas vulnerabilidades, identifique cada falha, explique o risco e corrija tudo',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 60,
   sections: [
     {

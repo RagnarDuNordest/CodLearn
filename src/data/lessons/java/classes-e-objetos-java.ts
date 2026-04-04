@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda os fundamentos da Programacao Orientada a Objetos: classes, objetos, construtores, atributos, metodos, encapsulamento e heranca.',
   order: 7,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

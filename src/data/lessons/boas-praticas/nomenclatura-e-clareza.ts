@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Nomenclatura e Clareza',
   description: 'Como nomear variaveis, funcoes e classes de forma que o codigo se explique sozinho',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

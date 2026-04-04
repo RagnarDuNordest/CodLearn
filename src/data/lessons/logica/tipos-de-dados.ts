@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda os tipos fundamentais de dados que existem em qualquer linguagem de programacao: numeros inteiros, decimais, textos e valores logicos.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

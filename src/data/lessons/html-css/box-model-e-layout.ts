@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda o modelo de caixa do CSS: margin, border, padding e content, alem de width, height, box-sizing e display.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

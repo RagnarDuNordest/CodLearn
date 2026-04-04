@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Dicionarios e Tuplas',
   description: 'Aprenda a usar dicionarios para armazenar pares chave-valor e tuplas para dados imutaveis.',
   order: 7,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

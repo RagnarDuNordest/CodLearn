@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Interface e Navegacao',
   description: 'Conheca o layout do VS Code, a paleta de comandos, o explorador de arquivos, abas e split editor para navegar com eficiencia',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

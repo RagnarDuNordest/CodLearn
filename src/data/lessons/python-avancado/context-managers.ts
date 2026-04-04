@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Context Managers',
   description: 'Aprenda a gerenciar recursos como arquivos, conexoes e locks de forma segura e elegante usando context managers e a instrucao with.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

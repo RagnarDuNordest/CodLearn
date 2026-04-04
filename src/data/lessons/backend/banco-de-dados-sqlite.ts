@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda os fundamentos de bancos de dados SQL: CREATE TABLE, INSERT, SELECT, UPDATE, DELETE e integracao com Python sqlite3.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

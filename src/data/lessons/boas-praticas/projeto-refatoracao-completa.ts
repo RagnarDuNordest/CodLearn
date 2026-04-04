@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Refatoracao Completa',
   description: 'Receba um projeto mal organizado e transforme em codigo profissional',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 50,
   sections: [
     {

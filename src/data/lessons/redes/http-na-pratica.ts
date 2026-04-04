@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'HTTP na Pratica',
   description: 'Domine HTTP: request/response, metodos, status codes, headers e as diferencas entre HTTP/1.1, HTTP/2 e HTTP/3',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

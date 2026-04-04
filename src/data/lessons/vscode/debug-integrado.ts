@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Debug Integrado',
   description: 'Use o debugger do VS Code com breakpoints, watch, call stack e debug console. Configure o launch.json para Python e JavaScript',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

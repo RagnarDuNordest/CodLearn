@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Trade-offs em Sistemas',
   description: 'Todo sistema e uma serie de escolhas — aprenda a identificar, avaliar e justificar os trade-offs de design',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

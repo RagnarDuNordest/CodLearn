@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Arquitetura Hexagonal: Ports & Adapters',
   description: 'Aprenda a separar a logica de negocio da infraestrutura usando Ports & Adapters, tornando seu sistema testavel, flexivel e facil de evoluir.',
   order: 7,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

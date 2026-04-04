@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a criar funcoes para organizar, reutilizar e simplificar seu codigo. Entenda parametros, retorno de valores e o conceito de escopo.',
   order: 9,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Descubra o que significa programar, por que as linguagens de programacao existem e como e o dia a dia de quem trabalha com codigo.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 10,
   sections: [
     {

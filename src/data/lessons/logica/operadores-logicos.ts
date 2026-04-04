@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Domine os operadores AND, OR e NOT, entenda tabelas verdade, aprenda a Lei de De Morgan e crie condicoes compostas para seus programas.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

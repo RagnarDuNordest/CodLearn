@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a navegar pelo sistema de arquivos, criar pastas e arquivos, copiar, mover e remover itens usando o terminal.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

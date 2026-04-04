@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Processamento Paralelo',
   description: 'Compare e aplique threads, multiprocessing e async em um pipeline de processamento real, escolhendo a abordagem certa para cada tipo de tarefa',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 60,
   sections: [
     {

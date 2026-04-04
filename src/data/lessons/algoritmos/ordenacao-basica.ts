@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Ordenacao: Bubble Sort e Selection Sort',
   description: 'Aprenda dois algoritmos classicos de ordenacao.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

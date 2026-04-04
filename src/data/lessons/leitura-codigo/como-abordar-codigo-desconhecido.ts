@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Como Abordar Codigo Desconhecido',
   description: 'Um metodo sistematico para entender qualquer codigo sem entrar em panico',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

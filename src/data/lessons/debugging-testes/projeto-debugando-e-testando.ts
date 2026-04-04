@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Debugando e Testando Codigo Real',
   description: 'Coloque em pratica tudo que aprendeu: encontre bugs em um sistema de pedidos, corrija-os e escreva uma suite de testes completa',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 60,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Padroes de Design na Pratica',
   description: 'Os padroes mais usados no dia a dia com exemplos reais e quando (nao) usar cada um',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 40,
   sections: [
     {

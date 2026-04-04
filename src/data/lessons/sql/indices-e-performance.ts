@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda como indices funcionam internamente (B-tree), como analisar o plano de execucao com EXPLAIN, quando criar (e quando nao criar) indices, e como evitar armadilhas comuns que tornam indices inuteis.',
   order: 9,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

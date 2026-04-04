@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Descubra o que e o Linux, suas principais distribuicoes, por que usa-lo e como dar seus primeiros passos no terminal.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

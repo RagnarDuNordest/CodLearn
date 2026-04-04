@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'HTTPS e Criptografia',
   description: 'Entenda o que TLS protege, a diferenca entre criptografia simetrica e assimetrica, e como configurar headers de segurança corretamente',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

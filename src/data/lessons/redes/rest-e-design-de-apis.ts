@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'REST e Design de APIs',
   description: 'Principios REST, boas praticas de URLs, versionamento, autenticacao, paginacao e como projetar APIs que desenvolvedores amam usar',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

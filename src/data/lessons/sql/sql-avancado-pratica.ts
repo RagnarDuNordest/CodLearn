@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: SQL Avancado na Pratica',
   description: 'Resolva problemas reais combinando CTEs recursivas, window functions, indices e analise de performance',
   order: 12,
+  type: 'lesson',
   estimatedMinutes: 60,
   sections: [
     {

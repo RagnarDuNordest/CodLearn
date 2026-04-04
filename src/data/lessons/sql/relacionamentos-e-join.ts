@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Entenda chaves estrangeiras, relacionamentos entre tabelas (1:N e N:N) e como combinar dados com INNER JOIN, LEFT JOIN e RIGHT JOIN.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Problemas Classicos de Concorrencia',
   description: 'Deadlock, starvation, producer-consumer e semaforos — os problemas classicos que todo dev precisa conhecer',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

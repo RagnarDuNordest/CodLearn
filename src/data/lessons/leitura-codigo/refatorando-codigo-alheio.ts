@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Refatorando Codigo de Outras Pessoas',
   description: 'Como melhorar codigo que voce nao escreveu sem quebrar nada',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

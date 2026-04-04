@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Comprehensions e Generators',
   description: 'Domine list comprehensions, dict/set comprehensions e generators para escrever codigo Python mais idiomatico e eficiente.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

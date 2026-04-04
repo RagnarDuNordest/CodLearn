@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Recursao',
   description: 'Entenda recursao, a tecnica em que uma funcao chama a si mesma para resolver problemas.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 18,
   sections: [
     {

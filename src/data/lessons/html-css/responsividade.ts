@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a criar layouts responsivos com media queries, viewport, abordagem mobile-first e unidades responsivas.',
   order: 7,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

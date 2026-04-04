@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aplique todos os conceitos do modulo em um projeto real: decomponha o problema, abstraia as partes, desenhe o fluxo e documente o raciocinio para construir um gerenciador de tarefas completo passo a passo.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

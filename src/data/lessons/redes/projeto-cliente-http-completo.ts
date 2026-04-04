@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Cliente HTTP Robusto',
   description: 'Construa um cliente HTTP de producao com autenticacao, retry automatico, cache de respostas e tratamento correto de erros',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 60,
   sections: [
     {

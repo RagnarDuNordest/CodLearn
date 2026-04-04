@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Fluxo de Dados',
   description: 'Como dados fluem entre componentes: comunicacao sincrona, assincrona, filas e pipelines',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

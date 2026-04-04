@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a usar funcoes de agregacao (COUNT, SUM, AVG, MIN, MAX), agrupar dados com GROUP BY, filtrar grupos com HAVING e criar alias com AS.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Manipulacao de Arquivos',
   description: 'Aprenda a ler e escrever arquivos de texto e CSV com Python.',
   order: 10,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

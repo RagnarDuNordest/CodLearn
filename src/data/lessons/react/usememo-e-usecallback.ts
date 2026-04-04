@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'useMemo e useCallback',
   description: 'Evite re-renders desnecessarios e calculos repetidos com memoizacao no React',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

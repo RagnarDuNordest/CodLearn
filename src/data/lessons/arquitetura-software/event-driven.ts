@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Arquitetura Orientada a Eventos',
   description: 'Entenda como sistemas desacoplados se comunicam por meio de eventos, aprenda os padroes Pub/Sub e filas, e saiba quando essa abordagem resolve problemas reais.',
   order: 8,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

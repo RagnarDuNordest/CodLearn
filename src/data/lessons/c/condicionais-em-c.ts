@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Condicionais em C',
   description: 'Aprenda a usar if, else if, else e switch em C.',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 12,
   sections: [
     {

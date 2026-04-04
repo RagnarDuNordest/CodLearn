@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a modificar dados com UPDATE, remover com DELETE, alterar tabelas com ALTER TABLE e garantir seguranca com transacoes (BEGIN, COMMIT, ROLLBACK).',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 22,
   sections: [
     {

@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Docker Compose',
   description: 'Orquestre multiplos containers com docker-compose.yml: services, volumes, networks, depends_on e stacks Flask + PostgreSQL',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 40,
   sections: [
     {

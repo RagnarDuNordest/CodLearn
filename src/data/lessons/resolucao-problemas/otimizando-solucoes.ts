@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda o principio "make it work, make it right, make it fast" -- por que otimizacao prematura e prejudicial, quando a performance realmente importa, e como refatorar codigo para torna-lo mais limpo e eficiente.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

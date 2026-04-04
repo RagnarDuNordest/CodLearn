@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'O que e Arquitetura de Software',
   description: 'Entenda o que e arquitetura de software, por que ela importa e como boas decisoes estruturais facilitam o crescimento do seu sistema.',
   order: 0,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

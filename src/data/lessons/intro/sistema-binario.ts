@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda como os computadores representam numeros, textos e tudo mais usando apenas zeros e uns, e entenda os conceitos de bits, bytes e o sistema de base 2.',
   order: 2,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

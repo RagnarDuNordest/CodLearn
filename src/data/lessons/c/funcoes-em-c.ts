@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Funcoes em C',
   description: 'Aprenda a criar e usar funcoes na linguagem C.',
   order: 5,
+  type: 'lesson',
   estimatedMinutes: 15,
   sections: [
     {

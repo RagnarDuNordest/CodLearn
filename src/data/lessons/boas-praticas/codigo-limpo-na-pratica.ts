@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Codigo Limpo na Pratica',
   description: 'As regras mais importantes de Clean Code aplicadas em codigo real',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

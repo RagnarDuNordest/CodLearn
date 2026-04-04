@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Estilos Arquiteturais: Monolito, Microservicos e Serverless',
   description: 'Conhea os tres principais estilos arquiteturais modernos, entenda seus trade-offs e aprenda a escolher o mais adequado para cada contexto.',
   order: 6,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

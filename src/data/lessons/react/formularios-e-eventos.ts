@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Formularios e Eventos',
   description: 'Capture inputs do usuario, gerencie formularios controlados e responda a eventos com React',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

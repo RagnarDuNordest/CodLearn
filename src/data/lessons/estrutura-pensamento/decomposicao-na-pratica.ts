@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a quebrar problemas grandes em partes gerenciaveis usando o pensamento top-down, e descubra quando parar de decompor para comecaar a construir.',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 20,
   sections: [
     {

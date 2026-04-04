@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Introducao a Testes',
   description: 'Entenda por que escrever testes e um investimento, nao um custo, e como testes automatizados aumentam sua confianca no codigo',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

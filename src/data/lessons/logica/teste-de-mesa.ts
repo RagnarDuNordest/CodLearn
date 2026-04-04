@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Aprenda a executar algoritmos passo a passo no papel (teste de mesa), construir tabelas de rastreamento e usar tecnicas de depuracao para encontrar e corrigir erros logicos.',
   order: 10,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

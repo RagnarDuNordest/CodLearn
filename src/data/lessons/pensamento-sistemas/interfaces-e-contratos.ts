@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Interfaces e Contratos',
   description: 'O que sao interfaces, por que importam mais que implementacoes e como definir contratos claros entre componentes',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

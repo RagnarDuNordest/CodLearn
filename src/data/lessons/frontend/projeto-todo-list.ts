@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Projeto: Todo List',
   description: 'Construa uma aplicacao completa de lista de tarefas juntando tudo que aprendeu.',
   order: 8,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

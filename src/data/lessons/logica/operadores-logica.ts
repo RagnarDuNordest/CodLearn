@@ -7,6 +7,7 @@ export const lesson: Lesson = {
   description:
     'Domine todos os operadores da programacao: faca calculos, compare valores, use atalhos de atribuicao e entenda a precedencia de operadores.',
   order: 4,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {

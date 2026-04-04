@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'GitHub Actions: Primeiros Passos',
   description: 'Aprenda a estrutura de workflows YAML: eventos on, jobs, steps e actions como checkout e setup-python',
   order: 1,
+  type: 'lesson',
   estimatedMinutes: 30,
   sections: [
     {

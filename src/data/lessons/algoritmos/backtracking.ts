@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Backtracking',
   description: 'Aprenda a resolver problemas explorando todas as possibilidades e recuando quando um caminho nao funciona.',
   order: 10,
+  type: 'lesson',
   estimatedMinutes: 35,
   sections: [
     {

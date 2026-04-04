@@ -6,6 +6,7 @@ export const lesson: Lesson = {
   title: 'Tipagem com Type Hints',
   description: 'Use anotacoes de tipo para documentar, prevenir bugs e habilitar tooling avancado em Python',
   order: 3,
+  type: 'lesson',
   estimatedMinutes: 25,
   sections: [
     {
