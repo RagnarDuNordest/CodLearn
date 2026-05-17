@@ -12,7 +12,6 @@ import BackgroundPattern from "@/components/ui/BackgroundPattern";
 import ReadingProgressBar from "@/components/ui/ReadingProgressBar";
 import KeyboardShortcutsModal from "@/components/ui/KeyboardShortcutsModal";
 import PomodoroTimer from "@/components/ui/PomodoroTimer";
-import AIHelper from "@/components/ui/AIHelper";
 import AuthSyncProvider from "@/components/auth/AuthSyncProvider";
 import "./globals.css";
 
@@ -67,7 +66,6 @@ export default function RootLayout({
           <LofiPlayer />
           <PomodoroTimer />
           <KeyboardShortcutsModal />
-          <AIHelper />
         </ThemeProvider>
       </body>
     </html>
