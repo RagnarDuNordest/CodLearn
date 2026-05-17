@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
@@ -29,7 +29,7 @@ import { getAllLessons } from '@/data/lessons';
 import { useProgress } from '@/hooks/useProgress';
 import Logo from '@/components/ui/Logo';
 
-const iconMap: Record<string, any> = {
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Lightbulb, Code, Cpu, Database, Boxes, GitBranch, GitMerge,
   Coffee, Globe, Server, Layout, Brain, Terminal,
 };

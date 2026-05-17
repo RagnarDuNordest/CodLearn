@@ -167,9 +167,7 @@ export default function LessonPage({
           {lessonQuiz && (
             <LessonQuiz
               quiz={lessonQuiz}
-              onComplete={(score, total) => {
-                console.log(`Quiz concluido: ${score}/${total}`);
-              }}
+              onComplete={() => {}}
             />
           )}
         </>
