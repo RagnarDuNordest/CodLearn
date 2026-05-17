@@ -13,6 +13,7 @@ import ReadingProgressBar from "@/components/ui/ReadingProgressBar";
 import KeyboardShortcutsModal from "@/components/ui/KeyboardShortcutsModal";
 import PomodoroTimer from "@/components/ui/PomodoroTimer";
 import AIHelper from "@/components/ui/AIHelper";
+import AuthSyncProvider from "@/components/auth/AuthSyncProvider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -57,7 +58,9 @@ export default function RootLayout({
           <BackgroundPattern />
           <ThemeSettingsApplier />
           <ReminderRunner />
-          <AppShell>{children}</AppShell>
+          <AuthSyncProvider>
+            <AppShell>{children}</AppShell>
+          </AuthSyncProvider>
           <BadgeToast />
           <LevelUpModal />
           <MilestoneModal />
