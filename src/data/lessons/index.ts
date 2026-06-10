@@ -290,6 +290,20 @@ import { lesson as usememoEUsecallback } from './react/usememo-e-usecallback';
 import { lesson as contextEEstadoGlobal } from './react/context-e-estado-global';
 import { lesson as projetoAppCompleto } from './react/projeto-app-completo';
 
+// Inteligencia Artificial e Machine Learning
+import { lesson as oQueEIa } from './inteligencia-artificial/o-que-e-ia';
+import { lesson as buscaEHeuristica } from './inteligencia-artificial/busca-e-heuristica';
+import { lesson as machineLearningFundamentos } from './inteligencia-artificial/machine-learning-fundamentos';
+import { lesson as regressaoEClassificacao } from './inteligencia-artificial/regressao-e-classificacao';
+import { lesson as arvoresDeDecisao } from './inteligencia-artificial/arvores-de-decisao';
+import { lesson as redesNeuraisArtificiais } from './inteligencia-artificial/redes-neurais-artificiais';
+import { lesson as deepLearning } from './inteligencia-artificial/deep-learning';
+import { lesson as nlpFundamentos } from './inteligencia-artificial/nlp-fundamentos';
+import { lesson as visaoComputacional } from './inteligencia-artificial/visao-computacional';
+import { lesson as eticaEmIa } from './inteligencia-artificial/etica-em-ia';
+import { lesson as projetoGuiadoIa } from './inteligencia-artificial/projeto-guiado-ia';
+import { lesson as projetoLivreIa } from './inteligencia-artificial/projeto-livre-ia';
+
 // Seguranca de Software
 import { lesson as ameacasEVulnerabilidades } from './seguranca/ameacas-e-vulnerabilidades';
 import { lesson as sqlInjection } from './seguranca/sql-injection';
@@ -562,6 +576,19 @@ const allLessons: Lesson[] = [
   usememoEUsecallback,
   contextEEstadoGlobal,
   projetoAppCompleto,
+  // Inteligencia Artificial e Machine Learning
+  oQueEIa,
+  buscaEHeuristica,
+  machineLearningFundamentos,
+  regressaoEClassificacao,
+  arvoresDeDecisao,
+  redesNeuraisArtificiais,
+  deepLearning,
+  nlpFundamentos,
+  visaoComputacional,
+  eticaEmIa,
+  projetoGuiadoIa,
+  projetoLivreIa,
   // Seguranca de Software
   ameacasEVulnerabilidades,
   sqlInjection,
