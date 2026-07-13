@@ -22,7 +22,7 @@ import { motion } from 'framer-motion';
 import {
   Lightbulb, Code, Cpu, Database, Boxes, GitBranch, GitMerge,
   Coffee, Globe, Server, Layout, Brain, Terminal,
-  BookOpen, ArrowRight, Heart, Target, Award, CheckCircle2,
+  BookOpen, ArrowRight, Heart, Target, Award, CheckCircle2, PlayCircle,
 } from 'lucide-react';
 import { playSound } from '@/lib/sounds';
 
@@ -336,8 +336,64 @@ export default function Home() {
         </div>
       )}
 
+      {/* Beginner Path — shown only for new users */}
+      {!hasStarted && nextLesson && (
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="mb-10"
+        >
+          <div className="mb-5">
+            <h2 className="text-xl font-bold">Por onde começar?</h2>
+            <p className="text-sm text-muted-foreground mt-1">
+              Siga essa trilha em ordem — cada etapa prepara você para a próxima.
+            </p>
+          </div>
+
+          {/* Steps */}
+          <div className="flex flex-col gap-3 mb-6">
+            {[
+              { step: 1, moduleId: 'intro',   title: 'Introdução à Programação', desc: 'O que é programação, como o computador pensa e seus primeiros códigos.' },
+              { step: 2, moduleId: 'python',  title: 'Python: Primeiros Passos', desc: 'Aprenda a linguagem mais fácil para iniciantes e crie seus primeiros programas reais.' },
+              { step: 3, moduleId: 'logica',  title: 'Lógica de Programação',    desc: 'Como pensar como um programador: algoritmos, fluxogramas e resolução de problemas.' },
+              { step: 4, moduleId: 'roadmap', title: 'Continue pelo Roadmap',     desc: 'Depois dos 3 primeiros módulos, use o Roadmap para escolher seu próximo passo.' },
+            ].map(({ step, moduleId, title, desc }) => (
+              <Link
+                key={step}
+                href={step < 4 ? `/modulo/${moduleId}` : '/roadmap'}
+                className="flex items-start gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary/40 transition-all group"
+              >
+                <div className={`flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center font-bold text-sm border-2 transition-colors ${
+                  step === 1
+                    ? 'bg-primary text-primary-foreground border-primary'
+                    : 'bg-muted text-muted-foreground border-border group-hover:border-primary/50'
+                }`}>
+                  {step}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className={`font-semibold text-sm ${step === 1 ? 'text-primary' : ''}`}>{title}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5 leading-relaxed">{desc}</p>
+                </div>
+                <ArrowRight className="w-4 h-4 text-muted-foreground flex-shrink-0 mt-1 group-hover:text-primary group-hover:translate-x-0.5 transition-all" />
+              </Link>
+            ))}
+          </div>
+
+          {/* Big CTA */}
+          <Link
+            href={`/licao/${nextLesson.mod.id}/${nextLesson.lesson.id}`}
+            className="flex items-center justify-center gap-3 w-full py-4 rounded-2xl bg-primary text-primary-foreground font-bold text-base hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
+          >
+            <PlayCircle className="w-5 h-5" />
+            Começar a Primeira Lição
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </motion.div>
+      )}
+
       {/* Module Cards */}
-      <h2 className="text-xl font-semibold mb-4">Módulos</h2>
+      <h2 className="text-xl font-semibold mb-4">{hasStarted ? 'Módulos' : 'Todos os Módulos'}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {modules.map((mod, idx) => {
           const Icon = iconMap[mod.icon] || BookOpen;
