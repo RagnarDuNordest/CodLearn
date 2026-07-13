@@ -302,6 +302,218 @@ const quizzes: LessonQuiz[] = [
       },
     ],
   },
+  {
+    lessonId: 'variaveis-e-tipos',
+    questions: [
+      {
+        id: 'var-q1',
+        question: 'Qual e a diferenca entre idade = 25 e idade = "25"?',
+        options: [
+          'Nenhuma diferenca — os dois guardam o mesmo valor',
+          'idade = 25 guarda um numero (int) e idade = "25" guarda um texto (str)',
+          'idade = "25" e o correto, o outro da erro',
+          'So a segunda forma funciona em Python',
+        ],
+        correctIndex: 1,
+        explanation: 'Sem aspas, 25 e um numero inteiro (int) e pode ser usado em calculos. Com aspas, "25" e uma string (texto) e nao pode ser somado, multiplicado etc.',
+      },
+      {
+        id: 'var-q2',
+        question: 'O que a funcao type() faz em Python?',
+        options: [
+          'Muda o tipo de uma variavel para outro tipo',
+          'Imprime o valor de uma variavel na tela',
+          'Retorna qual e o tipo de dado de uma variavel',
+          'Cria uma nova variavel do tipo especificado',
+        ],
+        correctIndex: 2,
+        explanation: 'type(variavel) retorna o tipo da variavel: <class "int">, <class "str">, <class "float"> ou <class "bool">. E util para debugar quando voce nao sabe qual tipo esta recebendo.',
+      },
+      {
+        id: 'var-q3',
+        question: 'Qual e a saida de: preco = 9.9; print(f"Total: R${preco:.2f}")?',
+        options: [
+          'Total: R$9.9',
+          'Total: R$9.90',
+          'Total: R$9.9000000',
+          'Erro de sintaxe',
+        ],
+        correctIndex: 1,
+        explanation: ':.2f dentro das chaves de uma f-string formata o numero com exatamente 2 casas decimais. 9.9 se torna 9.90 — essencial para exibir valores monetarios.',
+      },
+      {
+        id: 'var-q4',
+        question: 'Por que "CPF" deve ser guardado como str e nao int?',
+        options: [
+          'Nao ha motivo — qualquer tipo serve para CPF',
+          'Porque CPF e muito grande para int armazenar',
+          'Porque CPF pode ter zeros no inicio e pontos, e voce nao vai somar CPFs',
+          'Porque int nao suporta numeros com mais de 9 digitos',
+        ],
+        correctIndex: 2,
+        explanation: 'CPF como "012.345.678-90" tem zeros no inicio e caracteres especiais. Se fosse int, perderia o zero inicial e os pontos. Alem disso, nunca somamos ou multiplicamos CPFs — e um identificador, nao um numero calculavel.',
+      },
+    ],
+  },
+  {
+    lessonId: 'condicionais',
+    questions: [
+      {
+        id: 'cond-q1',
+        question: 'Qual e a diferenca entre = e == em Python?',
+        options: [
+          'Nenhuma — sao a mesma coisa',
+          '= compara dois valores, == atribui um valor a uma variavel',
+          '= atribui um valor a uma variavel, == compara dois valores',
+          '== e mais preciso que = para comparacoes',
+        ],
+        correctIndex: 2,
+        explanation: 'Em Python, = atribui: `nota = 7` coloca 7 na variavel nota. == compara: `nota == 7` pergunta "nota e igual a 7?". Confundir os dois e um erro classico que causa bugs dificeis de encontrar.',
+      },
+      {
+        id: 'cond-q2',
+        question: 'O que acontece se a indentacao estiver errada em um bloco if?',
+        options: [
+          'Python ignora a indentacao — ela e apenas estetica',
+          'O programa roda normalmente mas pode fazer coisas erradas',
+          'Python usa os dois pontos : para identificar o bloco, nao os espacos',
+          'Python gera um IndentationError ou executa o codigo fora do bloco errado',
+        ],
+        correctIndex: 3,
+        explanation: 'Python usa a indentacao (espacos no inicio da linha) para determinar o que pertence a cada bloco. Indentacao errada pode gerar um IndentationError ou pior: o codigo executa mas faz a coisa errada silenciosamente.',
+      },
+      {
+        id: 'cond-q3',
+        question: 'Dado o codigo: x = 15; if x > 10: print("A") elif x > 5: print("B") else: print("C") — qual e a saida?',
+        options: [
+          'A e B',
+          'B',
+          'A',
+          'C',
+        ],
+        correctIndex: 2,
+        explanation: 'Python verifica as condicoes em ordem. x = 15 satisfaz a primeira condicao (15 > 10), entao imprime "A" e para. O elif e o else nunca sao verificados quando o if ja foi True.',
+      },
+      {
+        id: 'cond-q4',
+        question: 'Qual operador logico exige que AMBAS as condicoes sejam verdadeiras para o if executar?',
+        options: [
+          'or',
+          'not',
+          'and',
+          'both',
+        ],
+        correctIndex: 2,
+        explanation: '"and" exige que as duas condicoes sejam True. "or" exige que pelo menos uma seja True. "not" inverte uma condicao. "both" nao existe em Python.',
+      },
+    ],
+  },
+  {
+    lessonId: 'lacos-de-repeticao',
+    questions: [
+      {
+        id: 'lac-q1',
+        question: 'Quantos numeros range(1, 6) gera?',
+        options: [
+          '6 numeros: 1, 2, 3, 4, 5, 6',
+          '5 numeros: 1, 2, 3, 4, 5',
+          '4 numeros: 2, 3, 4, 5',
+          '5 numeros: 0, 1, 2, 3, 4',
+        ],
+        correctIndex: 1,
+        explanation: 'range(inicio, fim) gera numeros de "inicio" ate "fim - 1". O valor final NUNCA e incluido. range(1, 6) gera 1, 2, 3, 4, 5 — apenas 5 numeros.',
+      },
+      {
+        id: 'lac-q2',
+        question: 'Quando voce deve usar while em vez de for?',
+        options: [
+          'Sempre — while e mais poderoso que for',
+          'Quando voce nao sabe quantas vezes vai repetir, so sabe quando parar',
+          'Quando voce precisa repetir mais de 10 vezes',
+          'Nunca — for substitui while em Python',
+        ],
+        correctIndex: 1,
+        explanation: 'Use for quando souber quantas vezes repetir ou tiver uma lista para percorrer. Use while quando a repeticao depende de uma condicao — voce nao sabe quantas vezes vai repetir, so sabe quando deve parar.',
+      },
+      {
+        id: 'lac-q3',
+        question: 'O que acontece num loop infinito com while?',
+        options: [
+          'Python limita automaticamente a 1000 repeticoes e para',
+          'O programa trava e fica rodando para sempre ate ser forcado a parar',
+          'Python detecta e gera um erro InfiniteLoopError',
+          'O laco para sozinho apos 60 segundos',
+        ],
+        correctIndex: 1,
+        explanation: 'Se a condicao do while nunca se tornar False, o programa fica rodando infinitamente. Voce precisa forcosamente encerrar o programa (Ctrl+C no terminal). Por isso e crucial que algo dentro do while modifique a condicao.',
+      },
+      {
+        id: 'lac-q4',
+        question: 'O que o comando break faz dentro de um laco?',
+        options: [
+          'Pausa o laco por 1 segundo e depois continua',
+          'Pula a iteracao atual e vai para a proxima',
+          'Interrompe o laco imediatamente e sai dele',
+          'Reinicia o laco do comeco',
+        ],
+        correctIndex: 2,
+        explanation: 'break interrompe o laco imediatamente e o programa continua apos o bloco do laco. continue pula apenas a iteracao atual e vai para a proxima. Sao comandos diferentes com efeitos diferentes.',
+      },
+    ],
+  },
+  {
+    lessonId: 'funcoes',
+    questions: [
+      {
+        id: 'func-q1',
+        question: 'Qual e o principal beneficio de usar funcoes em vez de repetir o codigo?',
+        options: [
+          'Funcoes tornam o programa mais lento mas mais seguro',
+          'Voce escreve a logica uma vez e reutiliza quantas vezes quiser — DRY',
+          'Funcoes sao obrigatorias em Python',
+          'Funcoes consomem menos memoria do computador',
+        ],
+        correctIndex: 1,
+        explanation: 'O principio DRY (Dont Repeat Yourself) diz que voce nao deve repetir a mesma logica em varios lugares. Com funcoes, voce define uma vez e chama quantas vezes precisar. Se a logica mudar, voce altera em um unico lugar.',
+      },
+      {
+        id: 'func-q2',
+        question: 'O que acontece se uma funcao nao tem o comando return?',
+        options: [
+          'Python gera um erro de sintaxe',
+          'A funcao retorna o valor 0 por padrao',
+          'A funcao retorna None (vazio) por padrao',
+          'A funcao retorna True por padrao',
+        ],
+        correctIndex: 2,
+        explanation: 'Em Python, toda funcao sem return retorna None implicantemente. Isso pode causar erros se voce tentar usar o resultado da funcao em calculos, pois None nao pode ser somado ou multiplicado.',
+      },
+      {
+        id: 'func-q3',
+        question: 'O que sao parametros de uma funcao?',
+        options: [
+          'Os resultados que a funcao produz',
+          'Os valores de entrada que a funcao recebe para trabalhar',
+          'Os comentarios dentro de uma funcao',
+          'O numero de vezes que a funcao pode ser chamada',
+        ],
+        correctIndex: 1,
+        explanation: 'Parametros sao as variaveis listadas na definicao da funcao (entre os parenteses do def). Quando voce chama a funcao, os valores que voce passa sao chamados de argumentos. Parametros sao as "entradas" da funcao.',
+      },
+      {
+        id: 'func-q4',
+        question: 'Qual e a saida de: def dobrar(n=2): return n * 2; print(dobrar()); print(dobrar(5))?',
+        options: [
+          'Erro — faltou passar um argumento',
+          '4 e 10',
+          '2 e 5',
+          '4 e 5',
+        ],
+        correctIndex: 1,
+        explanation: 'n=2 e o valor padrao do parametro. Quando chamado sem argumento, dobrar() usa n=2 e retorna 4. Quando chamado com argumento, dobrar(5) usa n=5 e retorna 10.',
+      },
+    ],
+  },
 ];
 
 const quizzesMap: Record<string, LessonQuiz> = {};

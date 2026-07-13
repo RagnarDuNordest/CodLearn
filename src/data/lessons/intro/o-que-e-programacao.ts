@@ -5,46 +5,100 @@ export const lesson: Lesson = {
   moduleId: 'intro',
   title: 'O que e Programacao?',
   description:
-    'Descubra o que significa programar, por que as linguagens de programacao existem e como e o dia a dia de quem trabalha com codigo.',
+    'Descubra o que e programacao, como funciona na pratica e por que aprender isso pode transformar sua vida profissional.',
   order: 0,
   type: 'lesson',
-  estimatedMinutes: 10,
+  estimatedMinutes: 12,
   sections: [
     {
-      type: 'text',
-      content:
-        'Imagine que voce precisa ensinar alguem a fazer um bolo de chocolate. Voce escreveria uma receita com instrucoes claras e em ordem: primeiro separe os ingredientes, depois misture a farinha com o acucar, em seguida adicione os ovos, e assim por diante. Se a pessoa seguir cada passo corretamente, o resultado sera um bolo delicioso.\n\nProgramar e exatamente isso: escrever uma sequencia de instrucoes para que o computador execute uma tarefa. A diferenca e que, em vez de farinha e ovos, usamos dados, e em vez de portugues, usamos uma linguagem que o computador consegue entender.',
+      type: 'callout',
+      calloutType: 'info',
+      content: '**Antes de comecar:** Voce nao precisa saber nada de tecnologia para entender esta licao. Se voce sabe usar um celular, voce ja tem tudo que precisa. Vamos do zero absoluto.',
     },
     {
       type: 'text',
       content:
-        '## O que sao linguagens de programacao?\n\nOs computadores nao entendem portugues, ingles ou qualquer idioma humano diretamente. Eles so entendem sequencias de zeros e uns (o famoso codigo binario). Mas escrever programas em zeros e uns seria extremamente dificil e tedioso.\n\nPor isso, foram criadas as **linguagens de programacao**. Elas funcionam como um meio-termo: sao simples o suficiente para nos, humanos, escrevermos e lermos, e ao mesmo tempo podem ser traduzidas para a linguagem que o computador entende.\n\nExistem centenas de linguagens de programacao, cada uma com suas vantagens. Neste curso, vamos focar em duas muito importantes: **Python** e **C**. Python e conhecida por ser simples e legivel, otima para quem esta comecando. C e mais proxima do hardware e te da uma compreensao profunda de como o computador funciona.',
+        '## Por que aprender isso vai mudar sua vida?\n\nEngenheiros de software ganham, em media, **R$ 8.000 a R$ 25.000 por mes** no Brasil. Empresas como Google, Nubank, Mercado Livre e centenas de startups contratam o tempo todo. Mas mais importante: programar e a habilidade de **criar coisas do nada**.\n\nVoce pode criar:\n- Um aplicativo que resolva um problema da sua cidade\n- Um site que venda seus produtos\n- Um programa que automatize tarefas chatas do seu trabalho\n- Sistemas que ajudem medicos a salvar vidas\n\nTudo isso comeca pelo que voce vai aprender agora.',
+    },
+    {
+      type: 'text',
+      content:
+        '## O que e programacao? A analogia perfeita\n\nImagine que voce vai contratar um funcionario para trabalhar na sua loja. Este funcionario e **incrivelmente obediente** — ele faz exatamente o que voce mandar, na ordem que voce mandar, sem questionar.\n\nPorem, este funcionario tem um problema: **ele e extremamente literal**. Se voce disser "abra a porta", ele vai ficar parado esperando voce dizer qual porta. Se voce disser "pegue o produto", ele pergunta: qual produto? Onde esta?\n\nO computador e exatamente esse funcionario. Ele e rapido, incansavel, e nao erra — mas precisa de instrucoes **muito precisas e detalhadas**.\n\n**Programacao e a arte de escrever essas instrucoes.**',
+    },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: 'Programacao nao exige genialidade nem dom para matematica. Exige paciencia para ser preciso e curiosidade para resolver problemas. Essas sao habilidades que qualquer pessoa pode desenvolver.',
+    },
+    {
+      type: 'text',
+      content:
+        '## Por que nao falamos direto com o computador em portugues?\n\nVoce deve estar pensando: "Por que nao simplesmente digito as instrucoes em portugues?"\n\nO computador, no fundo, so entende **eletricidade**: tem corrente eletrica (representado pelo numero 1) ou nao tem (representado pelo 0). Todo programa, todo site, todo jogo e, la no fundo, uma sequencia enorme de zeros e uns.\n\nEscrever programas diretamente em zeros e uns seria assim:\n\n`01001000 01100101 01101100 01101100 01101111`\n\nIsto significa apenas "Hello" em binario. Imagine escrever um aplicativo inteiro assim!\n\nPor isso existem as **linguagens de programacao**: elas sao um idioma intermediario que:\n- **Nos** conseguimos ler e escrever facilmente\n- O computador consegue **traduzir** para zeros e uns automaticamente',
+    },
+    {
+      type: 'text',
+      content:
+        '## Seu primeiro programa\n\nVamos ver um programa real. Nao se preocupe em memorizar ainda — apenas observe e tente entender o que esta acontecendo:',
     },
     {
       type: 'code',
       codeExample: {
         language: 'python',
-        code: 'print("Ola, mundo!")',
-        filename: 'ola_mundo.py',
-        description:
-          'Este e o programa mais classico da programacao. Ele simplesmente exibe a mensagem "Ola, mundo!" na tela. Em Python, a funcao print() e usada para mostrar textos.',
+        code: `# Tudo que comeca com # e um comentario
+# O computador ignora comentarios — eles sao para nos, humanos
+
+# print() e uma funcao que exibe texto na tela
+print("Ola, mundo!")
+
+# Podemos fazer contas diretamente
+print(10 + 25)
+
+# Podemos misturar texto e calculos
+nome = "Maria"
+print("Bem-vinda ao CodLearn,", nome)`,
+        filename: 'primeiro_programa.py',
+        description: 'Seu primeiro contato com codigo Python. Cada linha faz uma coisa especifica.',
       },
     },
     {
-      type: 'text',
-      content:
-        '## Por que aprender a programar?\n\nProgramar nao e so para quem quer trabalhar com tecnologia. E uma habilidade que desenvolve o **raciocinio logico**, a capacidade de **resolver problemas** e a **criatividade**. Veja algumas razoes para aprender:\n\n- **Automatizar tarefas repetitivas**: em vez de fazer a mesma coisa 100 vezes, voce escreve um programa que faz por voce.\n- **Criar solucoes**: aplicativos, sites, jogos, ferramentas — tudo isso e feito com programacao.\n- **Oportunidades de carreira**: a area de tecnologia e uma das que mais cresce no mundo, com otimos salarios e possibilidade de trabalho remoto.\n- **Entender o mundo digital**: vivemos cercados de tecnologia. Saber programar ajuda a entender como tudo funciona por tras das telas.',
+      type: 'callout',
+      calloutType: 'info',
+      content: '**O que acontece quando voce roda um programa?** O Python le seu codigo linha por linha, de cima para baixo, e executa cada instrucao em sequencia. E como seguir uma receita — o computador nunca pula etapas.',
     },
     {
       type: 'text',
       content:
-        '## O que um programador faz no dia a dia?\n\nMuita gente imagina um programador digitando codigo freneticamente o dia inteiro, mas a realidade e bem diferente. O dia a dia de quem programa envolve:\n\n- **Entender o problema**: antes de escrever qualquer codigo, e preciso compreender o que precisa ser resolvido.\n- **Planejar a solucao**: pensar na logica e na estrutura antes de comecar a digitar.\n- **Escrever codigo**: sim, essa parte existe, mas e apenas uma fracao do trabalho.\n- **Testar e corrigir erros**: programas raramente funcionam perfeitamente na primeira tentativa. Encontrar e corrigir erros (os famosos "bugs") faz parte da rotina.\n- **Colaborar com outras pessoas**: programadores trabalham em equipe, discutem ideias e revisam o codigo uns dos outros.',
+        '## Erros fazem parte — e isso e normal!\n\nSe voce digitar algo errado, o Python vai mostrar uma mensagem de erro. Isso nao e fracasso — e informacao. Veja o tipo de erro mais comum:',
+    },
+    {
+      type: 'code',
+      codeExample: {
+        language: 'python',
+        code: `# ERRADO: esqueceu as aspas
+print(Ola mundo)
+# Erro: SyntaxError: invalid syntax
+
+# CERTO: texto sempre entre aspas
+print("Ola mundo")
+# Saida: Ola mundo`,
+        filename: 'erro_comum.py',
+        description: 'O Python avisa exatamente onde esta o problema. Erros sao seus aliados, nao inimigos.',
+      },
     },
     {
       type: 'callout',
+      calloutType: 'warning',
+      content: '**Erro que todo iniciante comete:** Esquecer as aspas ao redor de textos. Sempre que quiser mostrar palavras, coloque entre aspas: `print("assim")`. Numeros nao precisam de aspas: `print(42)`.',
+    },
+    {
+      type: 'text',
       content:
-        'Voce nao precisa decorar tudo! Ate programadores experientes consultam documentacao e pesquisam na internet diariamente. O importante e entender os conceitos e saber onde encontrar as respostas quando precisar.',
+        '## O dia a dia de um programador\n\nMuita gente imagina um programador digitando codigo o dia inteiro sozinho numa sala escura. A realidade e completamente diferente:\n\n**Manha:** Reuniao com o time para planejar o que vai ser construido\n**Inicio do dia:** Leitura de codigo ja existente para entender o contexto\n**Maior parte do tempo:** Pensar no problema e na solucao\n**Parte do tempo:** Escrever o codigo\n**Resto do tempo:** Testar, corrigir bugs, revisar codigo dos colegas\n\nO codigo em si e apenas uma parte. O grande trabalho e **resolver problemas logicos**.',
+    },
+    {
+      type: 'callout',
       calloutType: 'tip',
+      content: '**Segredo dos profissionais:** Ate programadores com 20 anos de experiencia pesquisam no Google e na documentacao todo dia. Ninguem memoriza tudo. O que importa e saber pensar no problema e saber onde encontrar as respostas.',
     },
   ],
   challenges: [
@@ -52,35 +106,33 @@ export const lesson: Lesson = {
       id: 'oqep-c1',
       title: 'Sua primeira mensagem',
       description:
-        'Use a funcao print() para exibir a mensagem "Ola, eu estou aprendendo a programar!" na tela. Lembre-se de que o texto deve estar entre aspas dentro dos parenteses.',
+        'Use a funcao print() para exibir a mensagem "Ola, eu estou aprendendo a programar!" na tela.\n\nLembre-se: o texto dentro do print() precisa estar entre aspas.',
       language: 'python',
-      starterCode: '# Exiba a mensagem "Ola, eu estou aprendendo a programar!" na tela\n',
-      solution:
-        'print("Ola, eu estou aprendendo a programar!")',
+      starterCode: '# Escreva seu codigo abaixo\n# Use print() para mostrar a mensagem\n',
+      solution: 'print("Ola, eu estou aprendendo a programar!")',
       hints: [
-        'A funcao print() serve para exibir textos na tela.',
-        'O texto que voce quer exibir deve estar entre aspas, dentro dos parenteses: print("seu texto aqui").',
+        'A sintaxe e: print("seu texto aqui") — com o texto entre aspas dentro dos parenteses.',
+        'Cuidado com erros comuns: esqueceu as aspas? Colocou espaco extra? O Python e sensivel a esses detalhes.',
       ],
       testCases: [
         {
-          description: 'Exibe a mensagem correta',
+          description: 'Exibe a mensagem corretamente',
           expectedOutput: 'Ola, eu estou aprendendo a programar!',
         },
       ],
     },
     {
       id: 'oqep-c2',
-      title: 'Exibindo varias linhas',
+      title: 'Tres mensagens na tela',
       description:
-        'Exiba tres mensagens na tela, cada uma em uma linha separada:\n1. "Eu sou um programador!"\n2. "Python e incrivel!"\n3. "Vamos aprender juntos!"',
+        'Exiba tres mensagens na tela, cada uma em uma linha separada. Cada print() automaticamente vai para a proxima linha.\n\n1. "Eu sou um programador!"\n2. "Python e incrivel!"\n3. "Vamos aprender juntos!"',
       language: 'python',
-      starterCode: '# Exiba as tres mensagens abaixo, cada uma com seu proprio print()\n# 1. "Eu sou um programador!"\n# 2. "Python e incrivel!"\n# 3. "Vamos aprender juntos!"\n',
-      solution:
-        'print("Eu sou um programador!")\nprint("Python e incrivel!")\nprint("Vamos aprender juntos!")',
+      starterCode: '# Use tres linhas de print(), uma para cada mensagem\n',
+      solution: 'print("Eu sou um programador!")\nprint("Python e incrivel!")\nprint("Vamos aprender juntos!")',
       hints: [
-        'Voce precisa usar a funcao print() tres vezes, uma para cada mensagem.',
-        'Cada chamada de print() exibe o texto e pula para a proxima linha automaticamente.',
-        'Exemplo: print("primeira linha") e depois print("segunda linha") na linha de baixo.',
+        'Voce vai usar print() tres vezes, cada uma numa linha diferente do seu codigo.',
+        'Cada print() exibe o texto e automaticamente pula para a proxima linha.',
+        'Cuidado: o texto de cada mensagem precisa ser identico ao pedido (maiusculas, pontuacao, etc).',
       ],
       testCases: [
         {
@@ -91,19 +143,19 @@ export const lesson: Lesson = {
     },
     {
       id: 'oqep-c3',
-      title: 'Fazendo uma conta simples',
+      title: 'O computador calculando por voce',
       description:
-        'O computador tambem sabe fazer contas! Use print() para exibir o resultado da soma 10 + 25. Atencao: nao coloque a conta entre aspas, senao o Python vai exibir o texto "10 + 25" em vez do resultado.',
+        'O computador e uma maquina de calcular gigante. Use print() para exibir o resultado da soma 10 + 25.\n\nAtencao: numeros NAO precisam de aspas. Se voce colocar aspas, o Python mostrara o texto "10 + 25" em vez de calcular o resultado.',
       language: 'python',
-      starterCode: '# Use print() para exibir o resultado da soma 10 + 25\n# Dica: numeros e contas nao precisam de aspas!\n',
+      starterCode: '# Use print() para exibir o resultado de 10 + 25\n# Dica: numeros e operacoes matematicas ficam sem aspas\n',
       solution: 'print(10 + 25)',
       hints: [
-        'Para exibir o resultado de uma conta, coloque a expressao matematica dentro de print() sem aspas.',
-        'Se voce escrever print("10 + 25"), o Python exibe o texto "10 + 25". Sem aspas, ele calcula o resultado: print(10 + 25).',
+        'Errado: print("10 + 25") — isso exibe o texto, nao o calculo.',
+        'Certo: print(10 + 25) — sem aspas, o Python calcula e mostra o resultado.',
       ],
       testCases: [
         {
-          description: 'Exibe o resultado correto (35)',
+          description: 'Exibe o resultado correto: 35',
           expectedOutput: '35',
         },
       ],

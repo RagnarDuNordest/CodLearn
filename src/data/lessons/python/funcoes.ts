@@ -4,203 +4,356 @@ export const lesson: Lesson = {
   id: 'funcoes',
   moduleId: 'python',
   title: 'Funcoes',
-  description: 'Aprenda a criar funcoes para organizar e reutilizar seu codigo.',
+  description: 'Aprenda a criar blocos de codigo reutilizaveis — o segredo para programas organizados e profissionais.',
   order: 4,
   type: 'lesson',
-  estimatedMinutes: 15,
+  estimatedMinutes: 20,
   sections: [
     {
+      type: 'callout',
+      calloutType: 'info',
+      content: '**O que voce vai aprender:** Como criar funcoes — blocos de codigo que voce escreve uma vez e usa quantas vezes quiser. Funcoes sao o que transforma codigo bagunçado em codigo profissional.',
+    },
+    {
       type: 'text',
-      content: 'Uma **funcao** e um bloco de codigo que executa uma tarefa especifica. Voce ja usou funcoes antes: print() e input() sao funcoes embutidas do Python!\n\nA grande vantagem de criar suas proprias funcoes e poder **reutilizar codigo** sem precisar reescrever tudo.',
+      content:
+        '## O problema que funcoes resolvem\n\nImagine que voce precisa calcular o desconto de tres produtos diferentes:',
     },
     {
       type: 'code',
       codeExample: {
         language: 'python',
-        filename: 'funcao_basica.py',
-        code: `# Definindo uma funcao com def
-def saudacao(nome):
-    print(f"Ola, {nome}! Bem-vindo ao CodLearn!")
+        code: `# SEM funcao — codigo repetido (ruim!)
+preco1 = 100.0
+desconto1 = preco1 * 0.10
+final1 = preco1 - desconto1
+print(f"Produto 1: R\${final1:.2f}")
 
-# Chamando a funcao
-saudacao("Raphael")
-saudacao("Maria")
+preco2 = 250.0
+desconto2 = preco2 * 0.10
+final2 = preco2 - desconto2
+print(f"Produto 2: R\${final2:.2f}")
 
-# Saida:
-# Ola, Raphael! Bem-vindo ao CodLearn!
-# Ola, Maria! Bem-vindo ao CodLearn!`,
-        description: 'Use def para criar uma funcao. O valor entre parenteses e o parametro.',
+preco3 = 85.0
+desconto3 = preco3 * 0.10
+final3 = preco3 - desconto3
+print(f"Produto 3: R\${final3:.2f}")
+
+# Se o desconto mudar de 10% para 15%, preciso alterar em 3 lugares!
+# Com 100 produtos, seria 100 alteracoes. Isso e um pesadelo.`,
+        filename: 'sem_funcao.py',
+        description: 'Codigo repetido e dificil de manter. Se precisar mudar a logica, tem que mudar em varios lugares.',
       },
     },
     {
       type: 'text',
-      content: 'Funcoes podem **retornar** valores usando a palavra **return**. Isso permite usar o resultado da funcao em outras partes do codigo:',
+      content:
+        '## A solucao: escreva uma vez, use quantas vezes quiser\n\nUma funcao e como uma **receita com nome**: voce define os passos uma vez e sempre que precisar e so chamar pelo nome, passando os ingredientes:',
     },
     {
       type: 'code',
       codeExample: {
         language: 'python',
-        filename: 'funcao_return.py',
-        code: `def calcular_area(base, altura):
-    area = base * altura
-    return area
+        code: `# COM funcao — escreve uma vez, usa varias vezes
+def calcular_preco_final(preco, desconto_pct):
+    desconto = preco * desconto_pct
+    final = preco - desconto
+    return final
 
-# Usando o valor retornado
-resultado = calcular_area(5, 3)
-print(f"A area e: {resultado}")  # A area e: 15
+# Agora chame com qualquer preco
+print(f"Produto 1: R\${calcular_preco_final(100.0, 0.10):.2f}")
+print(f"Produto 2: R\${calcular_preco_final(250.0, 0.10):.2f}")
+print(f"Produto 3: R\${calcular_preco_final(85.0, 0.10):.2f}")
 
-# Parametros com valores padrao
-def potencia(base, expoente=2):
-    return base ** expoente
+# Se o desconto mudar para 15%, mudo em UM unico lugar:
+# def calcular_preco_final(preco, desconto_pct=0.15):`,
+        filename: 'com_funcao.py',
+        description: 'Com funcao, a logica fica num unico lugar. Mudou a logica? Muda uma vez, funciona em todo lugar.',
+      },
+    },
+    {
+      type: 'callout',
+      calloutType: 'info',
+      content: '**Principio DRY: "Dont Repeat Yourself" (Nao Se Repita).** Se voce esta copiando e colando o mesmo trecho de codigo, ha um sinal de que voce deveria criar uma funcao. Todo bom programador segue esse principio.',
+    },
+    {
+      type: 'text',
+      content:
+        '## Anatomia de uma funcao\n\nVeja cada parte de uma funcao com calma:',
+    },
+    {
+      type: 'code',
+      codeExample: {
+        language: 'python',
+        code: `# DEFININDO a funcao — isso e como criar a receita
+#    |         |     parametros (ingredientes)
+#    v         v         v
+def saudacao(nome, turno):
+    # Corpo da funcao — o que ela faz
+    mensagem = f"Boa {turno}, {nome}!"
+    return mensagem  # O que ela entrega de volta
+#   ^
+#   return e o resultado que a funcao "envia de volta"
 
-print(potencia(5))     # 25 (usa expoente=2)
-print(potencia(5, 3))  # 125 (usa expoente=3)`,
-        description: 'return envia um valor de volta para quem chamou a funcao.',
+# CHAMANDO a funcao — isso e como usar a receita
+resultado = saudacao("Ana", "tarde")
+print(resultado)           # Boa tarde, Ana!
+
+# Voce pode chamar com valores diferentes
+print(saudacao("Carlos", "manha"))  # Bom manha, Carlos!
+print(saudacao("Maria", "noite"))   # Boa noite, Maria!`,
+        filename: 'anatomia_funcao.py',
+        description: 'def define a funcao, os parametros sao as entradas, return e a saida. Defina uma vez, chame varias.',
+      },
+    },
+    {
+      type: 'callout',
+      calloutType: 'warning',
+      content: '**Erro comum #1:** Esquecer o `return`. Se uma funcao nao tem `return`, ela retorna `None` (vazio). Se voce tentar usar o resultado em um calculo, vai dar erro.\n\n**Erro comum #2:** Definir a funcao e nunca chamar. Escrever `def funcao():` nao executa nada — voce precisa chamar com `funcao()` depois.',
+    },
+    {
+      type: 'text',
+      content:
+        '## Funcoes com return: usando o resultado\n\nQuando uma funcao retorna um valor, voce pode:\n1. Guardar em uma variavel\n2. Usar diretamente em uma expressao\n3. Passar para outra funcao',
+    },
+    {
+      type: 'code',
+      codeExample: {
+        language: 'python',
+        code: `def calcular_area_retangulo(base, altura):
+    return base * altura
+
+def calcular_area_circulo(raio):
+    pi = 3.14159
+    return pi * raio ** 2  # ** e potenciacao
+
+# 1. Guardar em variavel
+area_sala = calcular_area_retangulo(10, 5)
+print(f"Area da sala: {area_sala} m2")
+
+# 2. Usar diretamente numa expressao
+preco_tapete = calcular_area_retangulo(6, 4) * 89.90
+print(f"Custo do tapete: R\${preco_tapete:.2f}")
+
+# 3. Passar para outra funcao
+print(f"Area do circulo: {calcular_area_circulo(3):.2f} m2")`,
+        filename: 'funcoes_return.py',
+        description: 'O valor retornado por return pode ser usado em qualquer expressao Python.',
+      },
+    },
+    {
+      type: 'text',
+      content:
+        '## Parametros com valores padrao\n\nVoce pode definir valores padrao para parametros — assim o usuario da funcao pode omiti-los quando o valor padrao e o desejado:',
+    },
+    {
+      type: 'code',
+      codeExample: {
+        language: 'python',
+        code: `def calcular_desconto(preco, percentual=0.10):
+    # Se nao passar percentual, usa 10% como padrao
+    desconto = preco * percentual
+    return preco - desconto
+
+# Usando sem o segundo argumento — usa o padrao (10%)
+print(f"R\${calcular_desconto(200):.2f}")     # R$180.00
+
+# Usando com o segundo argumento — substitui o padrao
+print(f"R\${calcular_desconto(200, 0.20):.2f}")  # R$160.00
+print(f"R\${calcular_desconto(200, 0.05):.2f}")  # R$190.00
+
+# Funcao com multiplos parametros, alguns com padrao
+def criar_usuario(nome, email, admin=False, ativo=True):
+    return {
+        "nome": nome,
+        "email": email,
+        "admin": admin,
+        "ativo": ativo
+    }
+
+usuario1 = criar_usuario("Ana", "ana@email.com")        # admin=False, ativo=True
+usuario2 = criar_usuario("Carlos", "c@email.com", admin=True)  # admin=True`,
+        filename: 'parametros_padrao.py',
+        description: 'Valores padrao tornam funcoes flexiveis. Parametros com padrao ficam sempre depois dos sem padrao.',
+      },
+    },
+    {
+      type: 'text',
+      content:
+        '## Funcoes embutidas que voce vai usar muito\n\nO Python ja vem com varias funcoes prontas. Voce ja conhece algumas:',
+    },
+    {
+      type: 'code',
+      codeExample: {
+        language: 'python',
+        code: `notas = [8.5, 6.0, 9.0, 7.5, 5.5]
+
+# Funcoes matematicas sobre listas
+print(sum(notas))         # 36.5  — soma todos
+print(len(notas))         # 5     — quantidade de itens
+print(max(notas))         # 9.0   — o maior
+print(min(notas))         # 5.5   — o menor
+
+# Calculando media com funcoes embutidas
+media = sum(notas) / len(notas)
+print(f"Media: {media:.1f}")      # Media: 7.3
+
+# Outras uteis
+numeros = [3, 1, 4, 1, 5, 9, 2, 6]
+print(sorted(numeros))    # [1, 1, 2, 3, 4, 5, 6, 9] — ordena
+print(abs(-42))           # 42 — valor absoluto
+print(round(3.7))         # 4  — arredonda`,
+        filename: 'funcoes_embutidas.py',
+        description: 'Funcoes embutidas poupam tempo. Voce nao precisa criar do zero o que o Python ja oferece.',
       },
     },
     {
       type: 'callout',
       calloutType: 'tip',
-      content: 'Principio DRY: "Don\'t Repeat Yourself" (Nao se repita). Se voce esta copiando e colando o mesmo codigo, provavelmente deveria criar uma funcao!',
-    },
-    {
-      type: 'text',
-      content: '## Funcoes Embutidas Uteis\n\nPython fornece funcoes prontas que voce pode usar dentro das suas funcoes:\n\n- **`sum(lista)`** — Soma todos os elementos de uma lista numerica\n- **`len(lista)`** — Retorna a quantidade de elementos de uma lista\n\nCombinando essas funcoes, voce consegue calcular a media de uma lista de notas com apenas uma linha. Veja um exemplo completo:',
-    },
-    {
-      type: 'code',
-      codeExample: {
-        language: 'python',
-        filename: 'exemplo_pratico.py',
-        code: `def calcular_media(notas):
-    soma = sum(notas)
-    media = soma / len(notas)
-    return media
-
-def verificar_aprovacao(media):
-    if media >= 7:
-        return "Aprovado"
-    elif media >= 5:
-        return "Recuperacao"
-    else:
-        return "Reprovado"
-
-# Usando as funcoes juntas
-minhas_notas = [8.0, 6.5, 9.0, 7.5]
-media = calcular_media(minhas_notas)
-situacao = verificar_aprovacao(media)
-print(f"Media: {media:.1f} - {situacao}")`,
-        description: 'Funcoes pequenas e focadas tornam o codigo mais organizado.',
-      },
+      content: '**Boas praticas para funcoes profissionais:**\n- Cada funcao deve fazer **uma coisa so** — se voce esta descrevendo a funcao com "e", ela provavelmente faz coisas demais\n- Nomes de funcoes devem ser **verbos**: `calcular_desconto()`, `validar_email()`, `enviar_mensagem()`\n- Mantenha funcoes **curtas** — se passar de 20 linhas, considere dividir em mais funcoes',
     },
   ],
   challenges: [
     {
       id: 'func-c1',
-      title: 'Verificador de Par ou Impar',
-      description: 'Crie uma funcao chamada "eh_par" que receba um numero inteiro e retorne True se for par ou False se for impar. Teste a funcao com pelo menos 3 numeros diferentes.',
+      title: 'Funcao de saudacao personalizada',
+      description: 'Crie uma funcao chamada `saudacao` que receba um nome e retorne uma mensagem de boas-vindas.\n\nA funcao deve retornar a string:\n"Seja bem-vindo(a), [nome]! Bom estudo no CodLearn!"',
       language: 'python',
-      starterCode: `# Crie a funcao eh_par que recebe um numero
-# e retorna True se for par, False se for impar
+      starterCode: `# Defina a funcao saudacao aqui
+def saudacao(nome):
+    # Complete o corpo da funcao
+    pass
 
-
-# Teste a funcao com diferentes numeros
-# print(eh_par(4))   # True
-# print(eh_par(7))   # False
-# print(eh_par(0))   # True
+# Teste chamando a funcao
+print(saudacao("Maria"))
+print(saudacao("Joao"))
 `,
-      solution: `def eh_par(numero):
-    return numero % 2 == 0
+      solution: `def saudacao(nome):
+    return f"Seja bem-vindo(a), {nome}! Bom estudo no CodLearn!"
 
-print(eh_par(4))   # True
-print(eh_par(7))   # False
-print(eh_par(0))   # True`,
+print(saudacao("Maria"))
+print(saudacao("Joao"))`,
       hints: [
-        'Um numero e par quando o resto da divisao por 2 e zero (numero % 2 == 0)',
-        'Use return para retornar True ou False diretamente',
-        'A expressao numero % 2 == 0 ja retorna um booleano, nao precisa de if',
+        'Use f-string para montar a mensagem com o nome: f"... {nome} ..."',
+        'Nao esqueca o return — sem ele a funcao retorna None.',
+        'Chame a funcao passando um nome entre aspas: saudacao("Maria")',
       ],
       testCases: [
-        { description: 'eh_par(4) deve retornar True', expectedOutput: 'True\nFalse\nTrue' },
+        {
+          description: 'Saudacao para Maria',
+          expectedOutput: 'Seja bem-vindo(a), Maria! Bom estudo no CodLearn!\nSeja bem-vindo(a), Joao! Bom estudo no CodLearn!',
+        },
       ],
     },
     {
       id: 'func-c2',
-      title: 'Calculadora de Fatorial',
-      description: 'Crie uma funcao chamada "fatorial" que receba um numero inteiro positivo e retorne o fatorial dele. O fatorial de N e o produto de todos os numeros de 1 ate N (ex: 5! = 5 x 4 x 3 x 2 x 1 = 120). O fatorial de 0 e 1.',
+      title: 'Calculadora de IMC',
+      description: 'Crie uma funcao `calcular_imc` que receba peso (kg) e altura (m) e retorne o IMC.\n\nFormula: IMC = peso / (altura * altura)\n\nDepois crie uma funcao `classificar_imc` que receba o imc e retorne a classificacao:\n- Abaixo de 18.5: "Abaixo do peso"\n- De 18.5 a 24.9: "Peso normal"\n- De 25 a 29.9: "Sobrepeso"\n- 30 ou acima: "Obesidade"\n\nExiba: "IMC: 22.86 — Peso normal"',
       language: 'python',
-      starterCode: `# Crie a funcao fatorial que recebe um numero
-# e retorna o fatorial dele
-# Lembre-se: 0! = 1 e 5! = 120
+      starterCode: `def calcular_imc(peso, altura):
+    # Calcule e retorne o IMC
+    pass
 
+def classificar_imc(imc):
+    # Retorne a classificacao com if/elif/else
+    pass
 
-# Teste com diferentes valores
-# print(fatorial(0))   # 1
-# print(fatorial(5))   # 120
-# print(fatorial(3))   # 6
+# Teste com peso=80 e altura=1.87
+imc = calcular_imc(80, 1.87)
+classificacao = classificar_imc(imc)
+print(f"IMC: {imc:.2f} — {classificacao}")
 `,
-      solution: `def fatorial(n):
-    resultado = 1
-    for i in range(1, n + 1):
-        resultado *= i
-    return resultado
+      solution: `def calcular_imc(peso, altura):
+    return peso / (altura * altura)
 
-print(fatorial(0))   # 1
-print(fatorial(5))   # 120
-print(fatorial(3))   # 6`,
+def classificar_imc(imc):
+    if imc < 18.5:
+        return "Abaixo do peso"
+    elif imc < 25:
+        return "Peso normal"
+    elif imc < 30:
+        return "Sobrepeso"
+    else:
+        return "Obesidade"
+
+imc = calcular_imc(80, 1.87)
+classificacao = classificar_imc(imc)
+print(f"IMC: {imc:.2f} — {classificacao}")`,
       hints: [
-        'Comece com resultado = 1 (pois 0! = 1 e multiplicar por 1 nao muda nada)',
-        'Use um laco for com range(1, n + 1) para multiplicar todos os numeros',
-        'Dentro do laco, use resultado *= i para ir multiplicando',
+        'IMC = peso / (altura ** 2) — use ** para potenciacao ou multiplique altura * altura',
+        'A funcao calcular_imc retorna apenas o numero. A classificar_imc retorna o texto.',
+        'Use {imc:.2f} para exibir com 2 casas decimais.',
       ],
       testCases: [
-        { description: 'fatorial(0)=1, fatorial(5)=120, fatorial(3)=6', expectedOutput: '1\n120\n6' },
+        {
+          description: 'IMC para peso=80, altura=1.87',
+          expectedOutput: 'IMC: 22.86 — Peso normal',
+        },
       ],
     },
     {
       id: 'func-c3',
-      title: 'Conversor de Temperatura',
-      description: 'Crie duas funcoes: "celsius_para_fahrenheit" e "fahrenheit_para_celsius". A formula e: F = C * 9/5 + 32. Teste ambas as funcoes e use uma para verificar a outra (converter ida e volta deve retornar o valor original).',
+      title: 'Analisador de notas de turma',
+      description: 'Crie uma funcao `analisar_turma` que receba uma lista de notas e retorne um dicionario com:\n- "media": a media da turma (com 1 casa decimal)\n- "maior": a maior nota\n- "menor": a menor nota\n- "aprovados": quantos alunos tem nota >= 7\n\nExiba cada informacao em uma linha separada.',
       language: 'python',
-      starterCode: `# Crie a funcao celsius_para_fahrenheit
-# Formula: F = C * 9/5 + 32
+      starterCode: `def analisar_turma(notas):
+    media = sum(notas) / len(notas)
+    maior = max(notas)
+    menor = min(notas)
 
+    # Conte os aprovados usando um laco for
+    aprovados = 0
+    for nota in notas:
+        pass  # Complete aqui
 
-# Crie a funcao fahrenheit_para_celsius
-# Formula: C = (F - 32) * 5/9
+    return {
+        "media": round(media, 1),
+        "maior": maior,
+        "menor": menor,
+        "aprovados": aprovados
+    }
 
+notas_turma = [8.5, 6.0, 9.0, 7.5, 5.5, 8.0, 4.5, 7.0]
+resultado = analisar_turma(notas_turma)
 
-# Teste as funcoes
-# print(celsius_para_fahrenheit(100))  # 212.0
-# print(fahrenheit_para_celsius(212))  # 100.0
-
-# Teste de ida e volta (converter e converter de volta)
+print(f"Media: {resultado['media']}")
+print(f"Maior nota: {resultado['maior']}")
+print(f"Menor nota: {resultado['menor']}")
+print(f"Aprovados: {resultado['aprovados']}")
 `,
-      solution: `def celsius_para_fahrenheit(celsius):
-    return celsius * 9/5 + 32
+      solution: `def analisar_turma(notas):
+    media = sum(notas) / len(notas)
+    maior = max(notas)
+    menor = min(notas)
 
-def fahrenheit_para_celsius(fahrenheit):
-    return (fahrenheit - 32) * 5/9
+    aprovados = 0
+    for nota in notas:
+        if nota >= 7:
+            aprovados += 1
 
-print(f"100C = {celsius_para_fahrenheit(100)}F")
-print(f"212F = {fahrenheit_para_celsius(212)}C")
-print(f"0C = {celsius_para_fahrenheit(0)}F")
-print(f"32F = {fahrenheit_para_celsius(32)}C")
+    return {
+        "media": round(media, 1),
+        "maior": maior,
+        "menor": menor,
+        "aprovados": aprovados
+    }
 
-# Teste ida e volta
-original = 37.5
-convertido = celsius_para_fahrenheit(original)
-volta = fahrenheit_para_celsius(convertido)
-print(f"Original: {original}C -> {convertido}F -> {volta}C")`,
+notas_turma = [8.5, 6.0, 9.0, 7.5, 5.5, 8.0, 4.5, 7.0]
+resultado = analisar_turma(notas_turma)
+
+print(f"Media: {resultado['media']}")
+print(f"Maior nota: {resultado['maior']}")
+print(f"Menor nota: {resultado['menor']}")
+print(f"Aprovados: {resultado['aprovados']}")`,
       hints: [
-        'Para Celsius para Fahrenheit: multiplique por 9/5 e some 32',
-        'Para Fahrenheit para Celsius: subtraia 32 e multiplique por 5/9',
-        'Use return para retornar o valor calculado em cada funcao',
+        'No laco for, use if nota >= 7 para verificar aprovacao e aprovados += 1 para contar.',
+        'sum(), max() e min() sao funcoes embutidas que recebem listas.',
+        'Para acessar o resultado do dicionario: resultado["media"]',
       ],
       testCases: [
         {
-          description: '100°C = 212°F e 212°F = 100°C',
-          expectedOutput: '100C = 212.0F\n212F = 100.0C\n0C = 32.0F\n32F = 0.0C\nOriginal: 37.5C -> 99.5F -> 37.5C',
+          description: 'Analise da turma com 8 notas',
+          expectedOutput: 'Media: 7.0\nMaior nota: 9.0\nMenor nota: 4.5\nAprovados: 5',
         },
       ],
     },
