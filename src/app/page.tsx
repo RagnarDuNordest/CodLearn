@@ -413,18 +413,18 @@ export default function Home() {
             >
               <Link
                 href={`/modulo/${mod.id}`}
-                className={`flex bg-card border border-border border-l-4 ${accent} rounded-xl p-5 hover:border-primary/40 hover:shadow-md transition-all group ${isComplete ? 'opacity-80' : ''}`}
+                className={`relative flex bg-card border border-border border-l-4 ${accent} rounded-xl p-5 hover:border-primary/40 hover:shadow-md transition-all group ${isComplete ? 'opacity-80' : ''}`}
               >
+                <div className="absolute top-2 left-2 w-5 h-5 rounded-full bg-muted border border-border flex items-center justify-center z-10">
+                  <span className="text-[9px] font-bold text-muted-foreground leading-none">{idx + 1}</span>
+                </div>
                 <div className="flex items-start gap-4 w-full">
                   <div className={`p-3 rounded-lg bg-muted ${mod.color} flex-shrink-0 group-hover:scale-105 transition-transform`}>
                     <Icon className="w-5 h-5" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2 mb-1">
-                      <h3 className="font-semibold text-sm group-hover:text-primary transition-colors leading-snug flex items-center gap-1.5">
-                        <span className="text-[10px] font-mono text-muted-foreground flex-shrink-0">
-                          {String(idx + 1).padStart(2, '0')}
-                        </span>
+                      <h3 className="font-semibold text-sm group-hover:text-primary transition-colors leading-snug">
                         {mod.title}
                       </h3>
                       <div className="flex items-center gap-1.5 flex-shrink-0">
