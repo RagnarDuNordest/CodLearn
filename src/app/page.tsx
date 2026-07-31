@@ -395,7 +395,7 @@ export default function Home() {
       {/* Module Cards */}
       <h2 className="text-xl font-semibold mb-4">{hasStarted ? 'Módulos' : 'Todos os Módulos'}</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {modules.map((mod, idx) => {
+        {[...modules].sort((a, b) => a.order - b.order).map((mod, idx) => {
           const Icon = iconMap[mod.icon] || BookOpen;
           const stats = getModuleStats(mod.id, mod.lessons);
           const percentage = stats.total > 0 ? Math.round((stats.completed / stats.total) * 100) : 0;
@@ -421,7 +421,10 @@ export default function Home() {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2 mb-1">
-                      <h3 className="font-semibold text-sm group-hover:text-primary transition-colors leading-snug">
+                      <h3 className="font-semibold text-sm group-hover:text-primary transition-colors leading-snug flex items-center gap-1.5">
+                        <span className="text-[10px] font-mono text-muted-foreground flex-shrink-0">
+                          {String(idx + 1).padStart(2, '0')}
+                        </span>
                         {mod.title}
                       </h3>
                       <div className="flex items-center gap-1.5 flex-shrink-0">
