@@ -46,5 +46,25 @@ export function useAuth() {
     await supabase.auth.signOut();
   }, []);
 
-  return { user, session, loading, signUp, signIn, signOut };
+  const resetPassword = useCallback(async (email: string) => {
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: `${window.location.origin}/auth/reset-password`,
+    });
+    if (error) throw error;
+  }, []);
+
+  const updatePassword = useCallback(async (newPassword: string) => {
+    const { error } = await supabase.auth.updateUser({ password: newPassword });
+    if (error) throw error;
+  }, []);
+
+  const signInWithGoogle = useCallback(async () => {
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: { redirectTo: `${window.location.origin}/auth/callback` },
+    });
+    if (error) throw error;
+  }, []);
+
+  return { user, session, loading, signUp, signIn, signOut, resetPassword, updatePassword, signInWithGoogle };
 }
