@@ -70,6 +70,11 @@ export const lesson: Lesson = {
         'Git parece complicado no inicio, mas depois que voce pega o jeito, nao consegue mais viver sem!',
       calloutType: 'tip',
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 No VS Code — Painel Source Control: Git visual sem memorizar comandos**\n\nO VS Code tem uma interface grafica completa para o Git — perfeita enquanto voce esta aprendendo os comandos:\n\n**Abrir o Source Control:** Pressione `Ctrl+Shift+G` ou clique no icone de ramificacao na barra lateral esquerda (parece um diagrama de fluxo).\n\n**O que voce ve:**\n- **Changes:** lista todos os arquivos modificados\n- Clique em qualquer arquivo para ver o **diff** (o que mudou, em verde/vermelho)\n- Clique em **+** ao lado do arquivo para fazer `git add` (staging)\n- Digite a mensagem de commit no campo de texto no topo\n- Clique em **✓ Commit** para confirmar\n\n**Badge de notificacao:** O icone do Source Control mostra um numero vermelho com quantos arquivos foram alterados — voce nunca esquece de commitar.\n\n**Dica:** Use o VS Code para visualizar e o terminal para comandos avancados (branches, rebase, stash). Com o tempo, voce aprende os dois e escolhe o mais rapido para cada situacao.',
+    },
   ],
   challenges: [
     {

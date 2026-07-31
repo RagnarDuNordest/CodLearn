@@ -164,6 +164,11 @@ except ValueError as erro:
       calloutType: 'tip',
       content: 'Uma boa pratica e validar os dados de entrada no inicio da funcao usando raise. Isso e chamado de "falhar rapido" (fail fast) e ajuda a encontrar problemas antes que eles causem bugs dificeis de rastrear.',
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 No VS Code — Erros e excecoes visiveis enquanto voce digita**\n\n**Error Lens** (`Ctrl+Shift+X` → busque "Error Lens" → instale):\nMostra os erros diretamente na linha, sem precisar passar o mouse. Quando uma excecao pode ser lancada, o VS Code sublinha a linha e mostra a mensagem ao lado: `Exception: Valor deve ser positivo`. Voce ve o problema no exato momento em que ele acontece.\n\n**Painel de Problemas:** Pressione `Ctrl+Shift+M` para abrir o painel que lista todos os erros e avisos do arquivo aberto — e clique em qualquer item para ir direto a linha.\n\n**Debug com excecoes:** Quando estiver rodando com `F5`, va em `Run → Add Configuration` e ative "Raised Exceptions" — o debugger para automaticamente em qualquer `raise`, mostrando o estado de todas as variaveis naquele momento.\n\n**Dica profissional:** Com Error Lens ativo, erros de sintaxe e problemas de tipo aparecem em vermelho/amarelo na propria linha — voce os corrige antes mesmo de rodar o codigo.',
+    },
   ],
   challenges: [
     {

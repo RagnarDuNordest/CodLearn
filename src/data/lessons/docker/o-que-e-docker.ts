@@ -35,6 +35,11 @@ export const lesson: Lesson = {
           'Demonstracao do fluxo basico: baixar imagem, listar imagens locais e criar um container. Note que a imagem fica armazenada localmente apos o pull e pode ser reutilizada.',
       },
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 No VS Code — Extensao Docker: gerencie containers sem decorar comandos**\n\nInstale a extensao oficial do Docker:\n`Ctrl+Shift+X` → busque "Docker" → instale a da **Microsoft** (logo azul da baleia)\n\n**O que aparece na barra lateral (icone da baleia):**\n- **Containers:** lista todos os containers em execucao e parados — clique com o botao direito para iniciar, parar, reiniciar ou abrir o terminal dentro do container\n- **Images:** todas as imagens baixadas localmente — clique com o botao direito para rodar ou deletar\n- **Volumes e Networks:** gerenciamento completo sem digitar um comando\n\n**Destaque de sintaxe no Dockerfile:** A extensao adiciona coloracao de sintaxe e autocomplete nos seus arquivos `Dockerfile` — voce ve sugestoes dos comandos validos (`FROM`, `RUN`, `COPY`, `CMD`) conforme digita.\n\n**Ver logs em tempo real:** Clique com o botao direito em um container rodando → "View Logs" — os logs aparecem diretamente no terminal do VS Code.\n\n**Dica:** Use o terminal para aprender os comandos (`docker run`, `docker ps`) e a extensao para visualizar e gerenciar o que esta rodando. O aprendizado e mais rapido quando voce ve graficamente o que os comandos fazem.',
+    },
   ],
   challenges: [
     {

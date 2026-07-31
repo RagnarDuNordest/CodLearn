@@ -50,6 +50,11 @@ export const lesson: Lesson = {
           'Com logging, voce controla a verbosidade sem alterar o codigo: level=DEBUG mostra tudo durante desenvolvimento, level=WARNING silencia mensagens de debug em producao.',
       },
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 No VS Code — Debugger visual: pare o tempo e inspecione tudo**\n\nO VS Code tem um debugger completo que elimina a necessidade de `print` para debug:\n\n**Como usar:**\n1. Clique na margem esquerda da linha que voce quer inspecionar — aparece um ponto vermelho (breakpoint)\n2. Pressione `F5` para rodar o programa no modo debug\n3. O programa para automaticamente nessa linha, "congelado no tempo"\n\n**O que voce pode fazer enquanto o programa esta pausado:**\n- **Painel Variables:** ve o valor atual de TODAS as variaveis\n- **Painel Watch:** adicione expressoes para monitorar (ex: `len(lista)`, `preco * 0.9`)\n- **Painel Call Stack:** ve qual funcao chamou qual (rastro completo)\n- `F10` — executa a proxima linha (Step Over)\n- `F11` — entra dentro da funcao chamada (Step Into)\n- `F5` — continua ate o proximo breakpoint\n\n**Dica:** Voce pode adicionar varias breakpoints. O programa para em cada uma em sequencia — ideal para rastrear bugs em loops ou chamadas de funcao aninhadas.',
+    },
   ],
   challenges: [
     {

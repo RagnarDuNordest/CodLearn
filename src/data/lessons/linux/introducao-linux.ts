@@ -77,6 +77,11 @@ export const lesson: Lesson = {
           'Comandos para ler e inspecionar o conteudo de arquivos diretamente no terminal.',
       },
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 No VS Code — Terminal integrado: chega de trocar de janela**\n\nVoce nao precisa abrir um terminal separado para rodar comandos Linux. O VS Code tem um terminal embutido:\n\n**Abrir o terminal:** Pressione `` Ctrl+` `` (crase/acento grave — a tecla abaixo do Esc) ou va em `View → Terminal`.\n\n**Dividir o terminal:** Clique no icone de divisao (⊞) na barra superior do terminal para ter dois terminais lado a lado — util para rodar um servidor num painel e digitar comandos no outro.\n\n**Multiplos terminais:** Clique em "+" para criar um novo terminal. Voce pode ter um bash, um Python shell e um git log abertos ao mesmo tempo.\n\n**Arrastar o painel:** Arraste a borda superior do terminal para aumentar ou diminuir o espaco.\n\n**Dica:** Tudo que voce aprendeu nesta licao — `ls`, `cd`, `mkdir`, `cat` — funciona exatamente igual dentro do terminal do VS Code. E o diretorio inicial ja e a pasta do seu projeto.',
+    },
   ],
   challenges: [
     {

@@ -100,6 +100,11 @@ print("Ola mundo")
       calloutType: 'tip',
       content: '**Segredo dos profissionais:** Ate programadores com 20 anos de experiencia pesquisam no Google e na documentacao todo dia. Ninguem memoriza tudo. O que importa e saber pensar no problema e saber onde encontrar as respostas.',
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 Configurando o VS Code para este curso**\n\nAntes de comecar a programar, instale duas coisas no VS Code:\n\n**1. Extensao Python** (`Ctrl+Shift+X` → busque "Python" → instale a da Microsoft)\nEla ativa o destaque de sintaxe, autocomplete e permite rodar arquivos Python diretamente no editor.\n\n**2. Extensao Error Lens** (`Ctrl+Shift+X` → busque "Error Lens")\nMostra os erros diretamente na linha do codigo, sem precisar passar o mouse.\n\n**Como rodar seu primeiro codigo:**\n- Crie um arquivo `ola.py`\n- Escreva `print("Ola, mundo!")`\n- Pressione `F5` ou clique no botao ▶ no canto superior direito\n- O resultado aparece no terminal integrado (`Ctrl+``)\n\nA partir de agora, cada licao vai mostrar como usar o VS Code para o topico especifico.',
+    },
   ],
   challenges: [
     {

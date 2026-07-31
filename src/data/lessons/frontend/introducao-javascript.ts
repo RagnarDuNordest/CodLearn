@@ -53,6 +53,11 @@ export const lesson: Lesson = {
       calloutType: 'tip',
       content: '**Dica:** Use **===** (igualdade estrita) em vez de **==** em JavaScript. O === compara valor E tipo, evitando bugs.',
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 No VS Code — ESLint e Prettier: codigo limpo automaticamente**\n\nInstale duas extensoes essenciais para JavaScript:\n\n**1. ESLint** (`Ctrl+Shift+X` → "ESLint" da Microsoft)\nAnalisa seu codigo e sublinha problemas em tempo real: variaveis nao usadas, `==` em vez de `===`, variaveis declaradas mas nunca lidas. Um quadrado vermelho aparece na margem da linha com o problema.\n\n**2. Prettier** (`Ctrl+Shift+X` → "Prettier - Code formatter")\nFormata o codigo automaticamente ao salvar: indentacao, aspas, virgulas, espacamentos — tudo padronizado sem voce pensar nisso.\n\n**Ativar formatacao ao salvar:**\n- Pressione `Ctrl+,` (virgula) para abrir as configuracoes\n- Busque "format on save"\n- Marque a caixa ✓\n\nAgora toda vez que voce salvar (`Ctrl+S`), o Prettier organiza o codigo automaticamente.\n\n**Resultado pratico:** Com ESLint + Prettier, voce aprende JavaScript com feedback imediato sobre boas praticas — e seu codigo sempre fica legivel mesmo quando escrito rapidamente.',
+    },
   ],
   challenges: [
     {

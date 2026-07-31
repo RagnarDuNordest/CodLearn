@@ -90,6 +90,11 @@ export const lesson: Lesson = {
         'Backend pode parecer misterioso, mas e so codigo que roda no servidor. Voce ja sabe programar — agora vai aplicar de um jeito novo!',
       calloutType: 'tip',
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 No VS Code — Testando sua API sem sair do editor**\n\nPara testar as rotas do seu servidor Flask, instale a extensao **Thunder Client**:\n\n`Ctrl+Shift+X` → busque "Thunder Client" → instale (icone de raio)\n\n**Como usar:**\n1. Clique no icone do Thunder Client na barra lateral (parece um raio)\n2. Clique em "New Request"\n3. Selecione o metodo (GET, POST, PUT, DELETE)\n4. Digite a URL: `http://localhost:5000/` ou `http://localhost:5000/api/tarefas`\n5. Para POST com JSON: clique na aba "Body" → selecione "JSON" → escreva o payload\n6. Clique em "Send" — a resposta aparece ao lado em milissegundos\n\n**Historico de requests:** O Thunder Client salva todas as suas requisicoes — voce pode reusar e modificar sem redigitar.\n\n**Por que e melhor que o Postman para iniciantes?** E mais leve, ja esta no seu editor e nao precisa de conta. O Postman e otimo para equipes, o Thunder Client e perfeito para desenvolvimento solo.',
+    },
   ],
   challenges: [
     {

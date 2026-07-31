@@ -65,6 +65,11 @@ export const lesson: Lesson = {
       content:
         'Ao criar um projeto React com Vite (recomendado), execute: `npm create vite@latest meu-projeto -- --template react`. Isso cria toda a estrutura automaticamente. O Vite e muito mais rapido que o Create React App.',
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 No VS Code — Snippets React: escreva componentes em segundos**\n\nInstale a extensao **ES7+ React/Redux/React-Native snippets**:\n`Ctrl+Shift+X` → busque "ES7+ React" → instale a de `dsznajder`\n\n**Os atalhos mais uteis:**\n- `rafce` + Tab → componente funcional completo com export default\n- `useState` + Tab → `const [state, setState] = useState(initialState)`\n- `useEffect` + Tab → `useEffect(() => { ... }, [])` com estrutura de cleanup\n- `imp` + Tab → `import ... from ...`\n- `clg` + Tab → `console.log()`\n\n**Exemplo pratico:** Abra um arquivo `.jsx` ou `.tsx`, digite `rafce` e pressione Tab. Em um segundo voce tem um componente funcional completo pronto para editar.\n\n**Extensao bonus — Auto Rename Tag:** `Ctrl+Shift+X` → "Auto Rename Tag". Quando voce renomeia a tag de abertura de `<div>` para `<section>`, a tag de fechamento muda automaticamente junto — zero chance de esquecer de fechar a tag.',
+    },
   ],
   challenges: [
     {

@@ -185,6 +185,11 @@ n = 30                  # Muito curto — n de que?`,
         description: 'Nomes descritivos com snake_case. Codigo e lido mais vezes do que escrito — facilite a vida de quem vai ler.',
       },
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 No VS Code — Tipos em tempo real com Pylance**\n\nCom a extensao **Python** instalada (que inclui o Pylance), o VS Code mostra os tipos automaticamente:\n\n**Hover para ver o tipo:** Passe o mouse em cima de qualquer variavel e uma janelinha aparece mostrando o tipo inferido. Ex: passe o mouse em `nome = "Maria"` e vera `(variable) nome: str`.\n\n**Autocomplete inteligente:** Quando voce digita `nome.` (com ponto), o VS Code lista automaticamente todos os metodos de string disponíveis: `.upper()`, `.split()`, `.replace()`, etc.\n\n**Erro de tipo em tempo real:** Se voce escrever `nome = "Maria"` e depois tentar fazer `nome + 10`, o Pylance sublinha com uma linha vermelha antes mesmo de rodar — igual ao compilador, mas sem precisar compilar.\n\nTente isso agora: crie um arquivo `.py` e observe o VS Code detectando os tipos conforme voce digita.',
+    },
   ],
   challenges: [
     {

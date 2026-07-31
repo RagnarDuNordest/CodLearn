@@ -212,6 +212,11 @@ print(round(3.7))         # 4  — arredonda`,
       calloutType: 'tip',
       content: '**Boas praticas para funcoes profissionais:**\n- Cada funcao deve fazer **uma coisa so** — se voce esta descrevendo a funcao com "e", ela provavelmente faz coisas demais\n- Nomes de funcoes devem ser **verbos**: `calcular_desconto()`, `validar_email()`, `enviar_mensagem()`\n- Mantenha funcoes **curtas** — se passar de 20 linhas, considere dividir em mais funcoes',
     },
+    {
+      type: 'callout',
+      calloutType: 'tip',
+      content: '**💻 No VS Code — Docstrings e assinaturas de funcoes**\n\nO VS Code torna o trabalho com funcoes muito mais produtivo:\n\n**Assinatura ao chamar:** Quando voce digita o nome de uma funcao e abre o parentese — ex: `calcular_area(` — o VS Code mostra um popup com os parametros esperados: `calcular_area(largura: float, altura: float) -> float`. Assim voce nunca precisa voltar ao codigo para lembrar a ordem dos argumentos.\n\n**Hover para ver docstring:** Passe o mouse em cima do nome da funcao para ler a descricao completa e os parametros.\n\n**Ir para a definicao:** Clique com `F12` (ou Ctrl+Click) em qualquer funcao para ir diretamente para onde ela foi definida — mesmo que esteja em outro arquivo.\n\n**Peek Definition:** Pressione `Alt+F12` para ver o codigo da funcao em uma janela flutuante sem sair do arquivo atual.\n\n**Dica pratica:** Ao escrever uma funcao, adicione uma docstring logo abaixo do `def`: o VS Code a mostrara sempre que alguem chamar a funcao.',
+    },
   ],
   challenges: [
     {
