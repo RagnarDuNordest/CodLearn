@@ -46,7 +46,7 @@ export const lesson: Lesson = {
     },
     {
       type: 'text',
-      content: '### Prettier — `esbenp.prettier-vscode`\n\nPrettier e um formatador de codigo automatico. Ele nao analisa logica — so garante que o codigo fique visualmente organizado: indentacao, espacamentos, aspas, virgulas no lugar certo.\n\n**Linguagens suportadas:** JavaScript, TypeScript, HTML, CSS, JSON, Markdown e mais.\n\n**Como ativar a formatacao automatica ao salvar:**\n1. Pressione `Ctrl+,` para abrir as configuracoes\n2. Busque "format on save"\n3. Marque a caixa ✓\n\nOu adicione diretamente no `settings.json` (`Ctrl+Shift+P` → "Open User Settings JSON"):\n```json\n{\n  "editor.defaultFormatter": "esbenp.prettier-vscode",\n  "editor.formatOnSave": true\n}\n```\n\n**Resultado:** Todo arquivo salvo com `Ctrl+S` fica organizado automaticamente — voce nunca mais precisa alinhar indentacao ou decidir se usa aspas simples ou duplas.',
+      content: '### Prettier — `esbenp.prettier-vscode`\n\nPrettier e um formatador de codigo automatico. Ele nao analisa logica — so garante que o codigo fique visualmente organizado: indentacao, espacamentos, aspas, virgulas no lugar certo.\n\n**Linguagens suportadas:** JavaScript, TypeScript, HTML, CSS, JSON, Markdown e mais.\n\n**Como ativar a formatacao automatica ao salvar:**\n1. Pressione `Ctrl+,` para abrir as configuracoes\n2. Busque "format on save"\n3. Marque a caixa ✓\n\nOu adicione diretamente no `settings.json` (`Ctrl+Shift+P` → "Open User Settings JSON") com `"editor.defaultFormatter": "esbenp.prettier-vscode"` e `"editor.formatOnSave": true`.\n\n**Resultado:** Todo arquivo salvo com `Ctrl+S` fica organizado automaticamente — voce nunca mais precisa alinhar indentacao ou decidir se usa aspas simples ou duplas.',
     },
     {
       type: 'text',
@@ -84,7 +84,16 @@ export const lesson: Lesson = {
     },
     {
       type: 'text',
-      content: '## Categoria 6: React e JavaScript\n\n### ES7+ React Snippets — `dsznajder.es7-react-js-snippets`\n\nSnippets sao atalhos de teclado que expandem para blocos de codigo prontos. Esta extensao traz os atalhos mais usados em React.\n\n**Como funciona:**\nDigite o atalho e pressione `Tab`. O codigo completo aparece com o cursor posicionado onde voce precisa digitar primeiro.\n\n**Os atalhos mais importantes:**\n\n| Atalho | Expande para |\n|--------|-------------|\n| `rafce` | Componente funcional com export default |\n| `useState` | `const [state, setState] = useState(initialState)` |\n| `useEffect` | `useEffect(() => { }, [])` com estrutura completa |\n| `useRef` | `const ref = useRef(null)` |\n| `imp` | `import ... from ...` |\n| `imr` | `import React from "react"` |\n| `clg` | `console.log()` |\n\n**Exemplo — `rafce` + Tab gera:**\n```jsx\nconst NomeDoComponente = () => {\n  return (\n    <div>\n      NomeDoComponente\n    </div>\n  );\n};\n\nexport default NomeDoComponente;\n```\n\n**Dica:** O nome do arquivo vira o nome do componente automaticamente. Crie `Botao.jsx`, escreva `rafce` + Tab, e o componente ja se chama `Botao`.',
+      content: '## Categoria 6: React e JavaScript\n\n### ES7+ React Snippets — `dsznajder.es7-react-js-snippets`\n\nSnippets sao atalhos de teclado que expandem para blocos de codigo prontos. Esta extensao traz os atalhos mais usados em React.\n\n**Como funciona:**\nDigite o atalho e pressione `Tab`. O codigo completo aparece com o cursor posicionado onde voce precisa digitar primeiro.\n\n**Os atalhos mais importantes:**\n- `rafce` + Tab → componente funcional com export default\n- `useState` + Tab → `const [state, setState] = useState(initialState)`\n- `useEffect` + Tab → `useEffect(() => { }, [])` com estrutura de cleanup\n- `useRef` + Tab → `const ref = useRef(null)`\n- `imp` + Tab → `import ... from ...`\n- `imr` + Tab → `import React from "react"`\n- `clg` + Tab → `console.log()`\n\n**Dica:** O nome do arquivo vira o nome do componente automaticamente. Crie `Botao.jsx`, escreva `rafce` + Tab, e o componente ja se chama `Botao`.',
+    },
+    {
+      type: 'code',
+      codeExample: {
+        language: 'javascript',
+        code: '// O que o atalho "rafce" + Tab gera automaticamente:\nconst NomeDoComponente = () => {\n  return (\n    <div>\n      NomeDoComponente\n    </div>\n  );\n};\n\nexport default NomeDoComponente;\n\n// O que "useState" + Tab gera:\nconst [state, setState] = useState(initialState);\n\n// O que "useEffect" + Tab gera:\nuseEffect(() => {\n  // efeito aqui\n\n  return () => {\n    // cleanup aqui\n  };\n}, []);',
+        filename: 'snippets_exemplo.jsx',
+        description: 'Codigo gerado pelos principais atalhos da extensao ES7+ React Snippets. Voce digita o atalho, pressiona Tab, e o bloco completo aparece com o cursor ja posicionado para editar.',
+      },
     },
     {
       type: 'text',
