@@ -310,6 +310,10 @@ import { lesson as sqlInjection } from './seguranca/sql-injection';
 import { lesson as xssECsrf } from './seguranca/xss-e-csrf';
 import { lesson as autenticacaoESenhas } from './seguranca/autenticacao-e-senhas';
 import { lesson as httpsECriptografia } from './seguranca/https-e-criptografia';
+import { lesson as controleDeAcessoIdor } from './seguranca/controle-de-acesso-idor';
+import { lesson as rateLimitingBruteForce } from './seguranca/rate-limiting-brute-force';
+import { lesson as variaveisDeAmbienteSegredos } from './seguranca/variaveis-de-ambiente-segredos';
+import { lesson as corsEPoliticaDeOrigem } from './seguranca/cors-e-politica-de-origem';
 import { lesson as projetoAuditoriaDeSeguranca } from './seguranca/projeto-auditoria-de-seguranca';
 
 const allLessons: Lesson[] = [
@@ -595,6 +599,10 @@ const allLessons: Lesson[] = [
   xssECsrf,
   autenticacaoESenhas,
   httpsECriptografia,
+  controleDeAcessoIdor,
+  rateLimitingBruteForce,
+  variaveisDeAmbienteSegredos,
+  corsEPoliticaDeOrigem,
   projetoAuditoriaDeSeguranca,
 ];
 
