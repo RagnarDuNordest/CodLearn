@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/ping?token=codlearn-ping-secret",
+      "schedule": "0 10 * * *"
+    }
+  ]
+}
